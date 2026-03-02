@@ -3,6 +3,10 @@ site_url: https://debate.support          # ← Change to your real domain later
 
 theme:
   name: material
+  features:
+    - navigation.sections       # Makes top-level sections look like grouped blocks (cleaner on desktop)
+    - navigation.instant        # OPTIONAL: Faster page loads (SPA-like, no full reloads when clicking links)
+    - toc.integrate             # OPTIONAL: Merges page TOC into left sidebar (instead of right) 
   favicon: DRLogo.png
   logo: DRLogo.png 
   palette:
@@ -12,4 +16,41 @@ theme:
 
 nav:
   - Home: index.md
-  - About: about.md
+  - Debate Theory:
+    - Overview: theory/index.md
+    - Debate Concepts: theory/concepts.md
+    - Roles: theory/roles.md
+  - Debate Chamber:
+    - Overview: chamber/index.md
+    - Switch Debate: chamber/switch.md
+    - Header Panel: chamber/header.md
+    - List Panel: chamber/list.md
+    - Graph Panel: chamber/graph.md
+    - Detail Panel: chamber/detail.md
+      - Detail Overview: chamber/detail/index.md
+      - Statement Box: chamber/detail/statement-box.md
+      - Chat Room Box: chamber/detail/chat-box.md
+      - Voting box: chamber/detail/voting-box.md
+      - Debate Actions Box: chamber/detail/action-box.md
+  - Dashboard:
+    - Overview: dashboard/index.md
+    - Chat Comments: dashboard/chat.md
+    - Your Votes: dashboard/your-votes.md
+    - Alerts and Flags: dashboard/alerts-and-flags.md
+    - Invitations: dashboard/invitations.md
+    - Join Requests: dashboard/join-requests.md
+    - Start a Debate: dashboard/start-a-debate.md
+    - AI Arg Generator: dashboard/AI-Args.md
+    - Your Debates: dashboard/your-debates.md
+    - Last Statement: dashboard/last-statement.md
+  - Account:
+    - Overview: account/index.md
+    - Profile: account/profile.md
+    - Subscriptions: account/subscription.md
+    # Add more as needed
+
+markdown_extensions:  # Add these to enable tabs/collapsibles/admonitions (see below)
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
