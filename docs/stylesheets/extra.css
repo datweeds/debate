@@ -1,37 +1,15 @@
-/* Content tabs (pymdownx.tabbed with alternate_style) */
-
-/* Inactive tabs: light grey background */
-.md-tabs__tab {
-  background-color: #f3f4f6;          /* light grey – adjust hex as needed */
-  border-radius: 6px 6px 0 0;         /* rounded top corners only */
-  margin-right: 4px;                  /* small gap between tabs */
-  transition: background-color 0.2s;  /* smooth hover/change */
-}
-
-/* Hover effect on inactive tabs */
-.md-tabs__tab:hover {
-  background-color: #e5e7eb;          /* slightly darker grey on hover */
-}
-
-/* Active/selected tab: light blue background + bolder look */
-.md-tabs__tab--active {
-  background-color: #dbeafe !important;  /* light blue – good contrast with indigo primary */
-  color: #1e40af;                        /* darker blue text for readability */
-  font-weight: 600;                      /* slightly bolder */
-  border-bottom: 3px solid #3b82f6;      /* optional: blue underline accent */
-}
-
-/* Dark mode adjustments – keep readable on slate background */
+/* Tab labels (text color) in dark mode */
 [data-md-color-scheme="slate"] .md-tabs__tab {
-  background-color: #374151;             /* darker grey for dark mode */
+  color: #fef08a !important;          /* bright yellow - Tailwind's yellow-300, good visibility */
 }
 
-[data-md-color-scheme="slate"] .md-tabs__tab:hover {
-  background-color: #4b5563;
-}
-
+/* Active/selected tab text - optional: make it a brighter/different yellow or white for contrast */
 [data-md-color-scheme="slate"] .md-tabs__tab--active {
-  background-color: #1e40af !important;  /* darker blue for dark mode */
-  color: #dbeafe;                        /* light text on dark blue */
-  border-bottom: 3px solid #60a5fa;
+  color: #fde047 !important;          /* even brighter yellow - yellow-400 */
+  /* or white for maximum contrast: color: #ffffff !important; */
+}
+
+/* Optional: hover state for better interactivity */
+[data-md-color-scheme="slate"] .md-tabs__tab:hover {
+  color: #fef08a !important;
 }
