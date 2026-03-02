@@ -1,5 +1,5 @@
 site_name: My Documentation
-site_url: https://yourdomain.com          # ← Change to your real domain later (important for correct links)
+site_url: https://debate.support          # ← Change to your real domain later (important for correct links)
 
 theme:
   name: material
