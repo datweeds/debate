@@ -25,4 +25,12 @@ More technical content here (native HTML, no styling needed).
 === "[ TECHNICAL NOTES ]"
     Deep dive: Implementation details, configs, errors. xxx
 
+    ---
+    title: New Vote Creation Flow
+    ---
+    flowchart LR
+        Start[Start] --> Decision{Decision?}
+        Decision -->|Yes| YesAction[Do Yes]
+        Decision -->|No| NoAction[Do No]
+
     tester
