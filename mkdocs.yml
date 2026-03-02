@@ -26,7 +26,7 @@ nav:
     - Header Panel: chamber/header.md
     - List Panel: chamber/list.md
     - Graph Panel: chamber/graph.md
-    - Detail Panel: chamber/detail.md
+    - Detail Panel: 
       - Detail Overview: chamber/detail/index.md
       - Statement Box: chamber/detail/statement-box.md
       - Chat Room Box: chamber/detail/chat-box.md
