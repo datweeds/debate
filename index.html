@@ -299,6 +299,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#new-vote-1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New Vote 1
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1379,13 +1390,35 @@ flowchart TD
 
 <h3 id="new-vote">New Vote</h3>
 <p>tester</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">[ FEATURES ]</label><label for="__tabbed_1_2">[ TECHNICAL NOTES ]</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">[ FEATURES ]</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Simple overview: How to use the feature from a user perspective. xxx</p>
 <p>This is the default view shown to business users.
 Additional paragraphs go here, also indented by 4 spaces.</p>
+<h3 id="new-vote-1_1">New Vote 1</h3>
+<p><details>
+<summary>Alternative Collapsible Tech Section</summary></p>
+<p>More technical content here (native HTML, no styling needed).
+<pre class="mermaid"><code>---
+title: How a New Vote is Created
+---
+flowchart TD
+    A[User opens Voting Box] --&gt; B{Debate active?}
+    B --&gt;|Yes| C[Click 'New Vote']
+    B --&gt;|No| D[Error: Debate closed]
+    C --&gt; E[Enter proposal details]
+    E --&gt; F[Set options &amp; duration]
+    F --&gt; G[Submit]
+    G --&gt; H[Vote listed &amp; votable]
+    style A fill:#bbf,stroke:#333
+    style H fill:#bfb,stroke:#333</code></pre></p>
 </div>
+</div>
+</div>
+</details>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">[ TECHNICAL NOTES ]</label></div>
+<div class="tabbed-content">
 <div class="tabbed-block">
 <p>Business Guidance: Users start a vote by filling a simple form.</p>
 </div>
