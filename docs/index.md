@@ -58,7 +58,7 @@ tester
         style A fill:#bbf,stroke:#333
         style H fill:#bfb,stroke:#333
     ```
-</details>
+    </details>
 
 === "[ TECHNICAL NOTES ]"
     Business Guidance: Users start a vote by filling a simple form.
