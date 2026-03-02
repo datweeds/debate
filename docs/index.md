@@ -22,12 +22,12 @@ More technical content here (native HTML, no styling needed).
 ### New Vote
 
 === "Business Guidance"
-    Simple overview: How to use the feature from a user perspective.
+    Simple overview: How to use the feature from a user perspective. xxx
     
     This is the default view shown to business users.
     Additional paragraphs go here, also indented by 4 spaces.
 
 === "Technical Guidance"
-    Deep dive: Implementation details, configs, errors.
+    Deep dive: Implementation details, configs, errors. xxx
 
     tester
