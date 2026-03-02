@@ -10,6 +10,7 @@ theme:
     - navigation.sections       # Makes top-level sections look like grouped blocks (cleaner on desktop)
     - navigation.instant        # OPTIONAL: Faster page loads (SPA-like, no full reloads when clicking links)
     - toc.integrate             # OPTIONAL: Merges page TOC into left sidebar (instead of right) 
+    - navigation.footer
   favicon: DRLogo.png
   logo: DRLogo.png 
   palette:
@@ -68,4 +69,13 @@ markdown_extensions:
       pygments_lang_class: true
   # If not already present, add this too (helps with images and other attributes)
   - attr_list
-  
+
+extra:
+    generator: false
+    social:
+      - icon: fontawesome/brands/x-twitter
+        link: https://x.com/davidtwaddell
+      - icon: fontawesome/solid/paper-plane
+        link: mailto:support@debate.report
+
+copyright: Copyright &copy; 2015 - 2026 David Twaddell, and Debate Report Limited
