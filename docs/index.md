@@ -19,10 +19,15 @@ Here's the simple, business-oriented explanation: Click "New Vote" to start voti
 More technical content here (native HTML, no styling needed).
 </details>
 
-### New Vote 2
+### New Vote
 
-=== "Business Guidance"   # Default tab
+=== "Business Guidance"
     Simple overview: How to use the feature from a user perspective.
+    
+    This is the default view shown to business users.
+    Additional paragraphs go here, also indented by 4 spaces.
 
-=== "Technical Guidance"  # Secondary tab
+=== "Technical Guidance"
     Deep dive: Implementation details, configs, errors.
+
+    tester
