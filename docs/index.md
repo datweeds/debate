@@ -1,4 +1,4 @@
-# Welcome to My Manual
+# Welcome to My Manual 2
 
 This is your home page.
 
