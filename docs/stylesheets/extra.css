@@ -3,3 +3,11 @@
   background-color: #eff6ff;          /* very light blue */
   border-left: 4px solid #3b82f6;     /* optional: colored left border accent */
 }
+.md-tabs__inner {
+  background-color: #f0f0f0;          /* light mode subtle bg */
+  border-radius: 8px;
+}
+
+[data-md-color-scheme="slate"] .md-tabs__inner {
+  background-color: #374151;
+}
