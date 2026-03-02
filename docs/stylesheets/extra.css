@@ -13,3 +13,10 @@
 [data-md-color-scheme="slate"] .md-tabs__tab:hover {
   color: #fef08a !important;
 }
+
+[data-md-color-primary="custom"] {
+  --md-primary-bg-color: #8B0000; /* Deep red */
+  --md-primary-fg-color: #FFD700; /* Optional: contrasting text color */
+  --md-primary-fg-color--light: #FFD700;
+  --md-primary-fg-color--dark: #C00000;
+}
