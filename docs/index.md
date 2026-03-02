@@ -4,15 +4,10 @@ This is your home page.
 
 - [About page →](about.md)
 
-### New Vote 1 (Business Guidance Default)
+## Title 2
+wefwerfwerfwef werfwef wef w
 
-Here's the simple, business-oriented explanation: Click "New Vote" to start voting.
-
-!!! info "Technical Details (Click to Expand)"
-    Advanced tech guidance: API calls, code snippets, troubleshooting, etc.
-    - Point 1
-    - Point 2
-
+### New Vote 1
 <details>
 <summary>Alternative Collapsible Tech Section</summary>
 
