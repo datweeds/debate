@@ -1,6 +1,9 @@
 site_name: My Documentation
 site_url: https://debate.support          # ← Change to your real domain later (important for correct links)
 
+extra_css:
+  - stylesheets/extra.css
+  
 theme:
   name: material
   features:
