@@ -1,7 +1,5 @@
-/* Dark mode: subtle dark background for top-level sections */
-[data-md-color-scheme="slate"] .md-nav__section {
-  background-color: #2d3748;          /* dark gray – adjust as needed, e.g. #1e293b */
-  border-radius: 4px;
-  margin: 0.2rem 0;
-  padding: 0.2rem 0.4rem;
+/* Light mode top-level sections */
+[data-md-color-scheme="default"] .md-nav__section {
+  background-color: #eff6ff;          /* very light blue */
+  border-left: 4px solid #3b82f6;     /* optional: colored left border accent */
 }
