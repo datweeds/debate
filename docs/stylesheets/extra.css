@@ -1,13 +1,37 @@
-/* Light mode top-level sections */
-[data-md-color-scheme="default"] .md-nav__section {
-  background-color: #eff6ff;          /* very light blue */
-  border-left: 4px solid #3b82f6;     /* optional: colored left border accent */
-}
-.md-tabs__inner {
-  background-color: #f0f0f0;          /* light mode subtle bg */
-  border-radius: 8px;
+/* Content tabs (pymdownx.tabbed with alternate_style) */
+
+/* Inactive tabs: light grey background */
+.md-tabs__tab {
+  background-color: #f3f4f6;          /* light grey – adjust hex as needed */
+  border-radius: 6px 6px 0 0;         /* rounded top corners only */
+  margin-right: 4px;                  /* small gap between tabs */
+  transition: background-color 0.2s;  /* smooth hover/change */
 }
 
-[data-md-color-scheme="slate"] .md-tabs__inner {
-  background-color: #374151;
+/* Hover effect on inactive tabs */
+.md-tabs__tab:hover {
+  background-color: #e5e7eb;          /* slightly darker grey on hover */
+}
+
+/* Active/selected tab: light blue background + bolder look */
+.md-tabs__tab--active {
+  background-color: #dbeafe !important;  /* light blue – good contrast with indigo primary */
+  color: #1e40af;                        /* darker blue text for readability */
+  font-weight: 600;                      /* slightly bolder */
+  border-bottom: 3px solid #3b82f6;      /* optional: blue underline accent */
+}
+
+/* Dark mode adjustments – keep readable on slate background */
+[data-md-color-scheme="slate"] .md-tabs__tab {
+  background-color: #374151;             /* darker grey for dark mode */
+}
+
+[data-md-color-scheme="slate"] .md-tabs__tab:hover {
+  background-color: #4b5563;
+}
+
+[data-md-color-scheme="slate"] .md-tabs__tab--active {
+  background-color: #1e40af !important;  /* darker blue for dark mode */
+  color: #dbeafe;                        /* light text on dark blue */
+  border-bottom: 3px solid #60a5fa;
 }
