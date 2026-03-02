@@ -2,8 +2,8 @@ site_name: My Documentation
 site_url: https://debate.support          # ← Change to your real domain later (important for correct links)
 
 theme:
-theme:
   name: material
+  favicon: DR Logo.png
   palette:
     scheme: slate          # Starts in dark mode
     primary: indigo
