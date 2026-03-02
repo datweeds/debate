@@ -4,6 +4,7 @@ site_url: https://debate.support          # ← Change to your real domain later
 theme:
   name: material
   favicon: DR Logo.png
+  logo: DR Logo.png 
   palette:
     scheme: slate          # Starts in dark mode
     primary: indigo
