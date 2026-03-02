@@ -61,9 +61,11 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
-      alternate_style: true          # This is important – enables the modern, mobile-friendly style
-  # Optional but helpful for tabs with code:
+      alternate_style: true
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+  # If not already present, add this too (helps with images and other attributes)
+  - attr_list
+  
