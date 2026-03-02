@@ -1,0 +1,13 @@
+site_name: My Documentation
+site_url: https://yourdomain.com          # ← Change to your real domain later (important for correct links)
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - search.suggest
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - About: about.md
