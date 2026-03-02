@@ -12,9 +12,26 @@ wefwerfwerfwef werfwef wef w
 <summary>Alternative Collapsible Tech Section</summary>
 
 More technical content here (native HTML, no styling needed).
+```mermaid
+---
+title: How a New Vote is Created
+---
+flowchart TD
+    A[User opens Voting Box] --> B{Debate active?}
+    B -->|Yes| C[Click 'New Vote']
+    B -->|No| D[Error: Debate closed]
+    C --> E[Enter proposal details]
+    E --> F[Set options & duration]
+    F --> G[Submit]
+    G --> H[Vote listed & votable]
+    style A fill:#bbf,stroke:#333
+    style H fill:#bfb,stroke:#333
+```
 </details>
 
 ### New Vote
+
+tester
 
 === "[ FEATURES ]"
     Simple overview: How to use the feature from a user perspective. xxx
@@ -23,14 +40,4 @@ More technical content here (native HTML, no styling needed).
     Additional paragraphs go here, also indented by 4 spaces.
 
 === "[ TECHNICAL NOTES ]"
-    Deep dive: Implementation details, configs, errors. xxx
-
-    ---
-    title: New Vote Creation Flow
-    ---
-    flowchart LR
-        Start[Start] --> Decision{Decision?}
-        Decision -->|Yes| YesAction[Do Yes]
-        Decision -->|No| NoAction[Do No]
-
-    tester
+    Business Guidance: Users start a vote by filling a simple form.
