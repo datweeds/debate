@@ -1,4 +1,4 @@
-site_name: debate.report User Guide
+site_name: debate.report USER GUIDE
 site_url: https://debate.support          # ← Change to your real domain later (important for correct links)
 
 extra_css:
@@ -19,12 +19,12 @@ theme:
 
 nav:
   - Home: index.md
-  - Debate Theory:
-    - Overview: theory/index.md
+  - 1] DEBATE THEORY:
+    - Theory Overview: theory/index.md
     - Debate Concepts: theory/concepts.md
     - Roles: theory/roles.md
-  - Debate Chamber:
-    - Overview: chamber/index.md
+  - 2] DEBATE CHAMBER:
+    - Chamber Overview: chamber/index.md
     - Switch Debate: chamber/switch.md
     - Header Panel: chamber/header.md
     - List Panel: chamber/list.md
@@ -35,8 +35,8 @@ nav:
       - Chat Room Box: chamber/detail/chat-box.md
       - Voting box: chamber/detail/voting-box.md
       - Debate Actions Box: chamber/detail/action-box.md
-  - Dashboard:
-    - Overview: dashboard/index.md
+  - 3] DASHBOARD:
+    - Dashboard Overview: dashboard/index.md
     - Chat Comments: dashboard/chat.md
     - Your Votes: dashboard/your-votes.md
     - Alerts and Flags: dashboard/alerts-and-flags.md
@@ -46,8 +46,8 @@ nav:
     - AI Arg Generator: dashboard/AI-Args.md
     - Your Debates: dashboard/your-debates.md
     - Last Statement: dashboard/last-statement.md
-  - Account:
-    - Overview: account/index.md
+  - 4] ACCOUNT:
+    - Account Overview: account/index.md
     - Profile: account/profile.md
     - Subscriptions: account/subscription.md
     # Add more as needed
