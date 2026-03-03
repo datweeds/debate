@@ -1,21 +1,6 @@
-/* Tab labels (text color) in dark mode */
-[data-md-color-scheme="slate"] .md-tabs__tab {
-  color: #fef08a !important;          /* bright yellow - Tailwind's yellow-300, good visibility */
-}
-
-/* Active/selected tab text - optional: make it a brighter/different yellow or white for contrast */
-[data-md-color-scheme="slate"] .md-tabs__tab--active {
-  color: #fde047 !important;          /* even brighter yellow - yellow-400 */
-  /* or white for maximum contrast: color: #ffffff !important; */
-}
-
-/* Optional: hover state for better interactivity */
-[data-md-color-scheme="slate"] .md-tabs__tab:hover {
-  color: #fef08a !important;
-}
 
 [data-md-color-primary="custom"] {
-  --md-primary-bg-color: #8B0000; /* Deep red */
+  --md-primary-bg-color: #C00000; /* Deep red */
   --md-primary-fg-color: #FFD700; /* Optional: contrasting text color */
   --md-primary-fg-color--light: #FFD700;
   --md-primary-fg-color--dark: #C00000;
