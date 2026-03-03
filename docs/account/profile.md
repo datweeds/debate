@@ -1,2 +1,2 @@
 # Profiles
---8<-- "/index.md"   
+--8<-- "index.md"   
