@@ -16,7 +16,7 @@ theme:
   palette:
     scheme: slate          # Starts in dark mode
     primary: red
-    accent: pink
+    accent: red
 
 nav:
   - Home: index.md
