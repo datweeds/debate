@@ -1,7 +1,7 @@
 
 [data-md-color-primary="custom"] {
   --md-primary-bg-color: #C00000; /* Deep red */
-  --md-primary-fg-color: #FFD700; /* Optional: contrasting text color */
-  --md-primary-fg-color--light: #FFD700;
+  --md-primary-fg-color: #C00000; /* Optional: contrasting text color */
+  --md-primary-fg-color--light: #C00000;
   --md-primary-fg-color--dark: #C00000;
 }
