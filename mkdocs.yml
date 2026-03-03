@@ -15,8 +15,8 @@ theme:
   logo: DRLogo.png 
   palette:
     scheme: slate          # Starts in dark mode
-    primary: pink
-    accent: indigo
+    primary: red
+    accent: pink
 
 nav:
   - Home: index.md
