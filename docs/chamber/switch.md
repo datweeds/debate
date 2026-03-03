@@ -3,16 +3,18 @@ The **User Guide** is currently undergoing major re-construction, which we are a
 
 Thank you for your patience, and your ongoing interest in **debate.report**. We are aiming to build a world-leading debate platform, and to encourage many more people to engage in meaningful debate. If even a few well-informed critical-thinkers debate here this will help all the rest of us, who perhaps don't have the time or inclination to participate in debates, but who want to come to an informed position on the important issues of the day.
 
-# Title1
-Text
 ## Title2
 Text
-###Title3
+
+### Title3
 Text
+
 === "[ FEATURES ]"
+
     ### Title Feature Notes
     Text
     Additional paragraphs go here, also indented by 4 spaces.
+    
     ### Text 2
     <details>
     <summary>Collapsible Tech Section</summary>
