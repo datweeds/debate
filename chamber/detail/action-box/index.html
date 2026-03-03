@@ -744,6 +744,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Debate Actions Box
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -760,6 +778,86 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#support-notice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support Notice
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-title2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test Title2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test Title2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#title-feature-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Title Feature Notes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#title-technical-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Title Technical Notes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1281,7 +1379,43 @@
 
 
 <h1 id="debate-actions">Debate Actions</h1>
-<p>--8&lt;-- "/index.md"   </p>
+<h2 id="support-notice">Support Notice</h2>
+<p>The <strong>User Guide</strong> is currently undergoing major re-construction, which we are aiming to complete by the end of April 2026. In the meantime please email <a href="mailto:support@debate.report">support@debate.report</a></p>
+<p>Thank you for your patience, and your ongoing interest in <strong>debate.report</strong>. We are aiming to build a world-leading debate platform, and to encourage many more people to engage in meaningful debate. If even a few well-informed critical-thinkers debate here this will help all the rest of us, who perhaps don't have the time or inclination to participate in debates, but who want to come to an informed position on the important issues of the day.</p>
+<hr />
+<h2 id="test-title2">Test Title2</h2>
+<p>Text</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">[ FEATURES ]</label><label for="__tabbed_1_2">[ TECHNICAL NOTES ]</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<h3 id="title-feature-notes">Title Feature Notes</h3>
+<p>Text
+Additional paragraphs go here, also indented by 4 spaces.</p>
+<h3 id="text-2">Text 2</h3>
+<p><details>
+<summary>Collapsible Tech Section</summary>
+More technical content here (native HTML, no styling needed).
+<pre class="mermaid"><code>---
+title: Template Flow Diagram
+---
+flowchart TD
+    A[User opens Voting Box] --&gt; B{Debate active?}
+    B --&gt;|Yes| C[Click 'New Vote']
+    B --&gt;|No| D[Error: Debate closed]
+    C --&gt; E[Enter proposal details]
+    E --&gt; F[Set options &amp; duration]
+    F --&gt; G[Submit]
+    G --&gt; H[Vote listed &amp; votable]
+    style A fill:#C91616,stroke:#333
+    style H fill:#C91616,stroke:#333</code></pre>
+</details></p>
+</div>
+<div class="tabbed-block">
+<h3 id="title-technical-notes">Title Technical Notes</h3>
+<p>Text</p>
+</div>
+</div>
+</div>
 
 
 
