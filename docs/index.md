@@ -1,4 +1,4 @@
-# Template
+# Debate Report User Guide
 
 ## Support Notice
 The **User Guide** is currently undergoing major re-construction, which we are aiming to complete by the end of April 2026. In the meantime please email [support@debate.report](mailto:support@debate.report)
