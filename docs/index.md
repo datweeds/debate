@@ -1,44 +1,17 @@
 # Debate Report User Guide
 
-## Support Notice
-The **User Guide** is currently undergoing major re-construction, which we are aiming to complete by the end of April 2026. In the meantime please email [support@debate.report](mailto:support@debate.report)
+!!! warning "Support Notice"
+    The **User Guide** is currently undergoing major re-construction, which we are aiming to complete by the end of April 2026. In the meantime please email [support@debate.report](mailto:support@debate.report)
 
-Thank you for your patience, and your ongoing interest in **debate.report**. We are aiming to build a world-class debate platform, and to encourage many more people to engage in meaningful debate. The platform essentially turns debating into a fun and enjoyable game for the participants, and which helps participants and the audience alike to develop and sharpen their critical-thinking skills and to come to an informed position on the important issues of the day. 
+    Thank you for your patience, and your ongoing interest in **debate.report**. We are aiming to build a world-class debate platform, and to encourage many more people to engage in meaningful debate. The platform essentially turns debating into a fun and enjoyable game for the participants, and which helps participants and the audience alike to develop and sharpen their critical-thinking skills and to come to an informed position on the important issues of the day. 
 
-the Debate Report Team, March 2026
+    the Debate Report Team, March 2026
 
 ---
 
-## Test Title2
-Text
+## Subject Areas
+All debates are classified by ***subject area***. This is a standard set of twelve subject areas defined across the platform, designed to accommodate any debate topic imaginable. The subject area is set by the Moderator when they create the debate resolution (in the [dashboard](dashboard/index.md)).
 
-=== "[ FEATURES ]"
+## Favouritve Debates
+If you are logged in you can tag any debate as a ***favouritve*** and it will appear in this table for quick reference. You will also see a heart icon in the [chamber](chamber/index.md) and in the [switch panel](chamber/switch.md) . This helps to personalise the debate platform and filter out debates you are not so interested in.
 
-    ### Title Feature Notes
-    Text
-    Additional paragraphs go here, also indented by 4 spaces.
-    
-    ### Text 2
-    <details>
-    <summary>Collapsible Tech Section</summary>
-    More technical content here (native HTML, no styling needed).
-    ```mermaid
-    ---
-    title: Template Flow Diagram
-    ---
-    flowchart TD
-        A[User opens Voting Box] --> B{Debate active?}
-        B -->|Yes| C[Click 'New Vote']
-        B -->|No| D[Error: Debate closed]
-        C --> E[Enter proposal details]
-        E --> F[Set options & duration]
-        F --> G[Submit]
-        G --> H[Vote listed & votable]
-        style A fill:#C91616,stroke:#333
-        style H fill:#C91616,stroke:#333
-    ```
-    </details>
-
-=== "[ TECHNICAL NOTES ]"
-    ### Title Technical Notes
-    Text
