@@ -10,7 +10,7 @@
 ---
 
 ## Subject Areas
-All debates are classified by ***subject area***. This is a standard set of twelve subject areas defined across the platform, designed to accommodate any debate topic imaginable. The subject area is set by the Moderator when they create the debate resolution (in the [dashboard](dashboard/index.md)).
+Click ***+*** to expand the subject area panel (***-*** collapse again). All debates are classified by ***subject area***. This is a standard set of twelve subject areas defined across the platform, designed to accommodate any debate topic imaginable. The subject area is set by the Moderator when they create the debate resolution (in the [dashboard](dashboard/index.md)).
 
 ## Favourite Debates
 If you are logged in you can tag any debate as a ***favourite*** and it will appear in this table for quick reference. You will also see a heart icon in the [chamber](chamber/index.md) and in the [switch panel](chamber/switch.md) . This helps to personalise the debate platform and filter out debates you are not so interested in.
