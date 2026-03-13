@@ -564,28 +564,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#title-feature-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Title Feature Notes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#title-technical-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Title Technical Notes
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1441,46 +1419,63 @@
     Here is a diagram that shows how the different types of statement relate to each other in an argument
 
 
-    <pre class="mermaid"><code>---
-title: Debate Structure Diagram
----
-classDiagram
+    <pre class="mermaid"><code>classDiagram
 direction TB
 
 class Resolution {
-    Formal statement setting the debate topic
+    +String text
 }
 
 class Framework {
-    Principles or standards for evaluation
+    +String principles
 }
 
 class Claim {
-    Assertion of belief or position
+    +String content
+    +Direction direction
 }
 
 class Rebuttal {
-    Response refuting opponent's point
 }
 
 class Turn {
-    Argument reversing opponent's point
 }
 
 class Impact {
-    Consequence or significance of argument
 }
 
 class Warrant {
-    Logical justification linking evidence to claim
 }
 
 class Evidence {
-    Statistics, examples, testimony
 }
 
-Resolution     "1"   --&gt;   "1"     Framework          : "evaluated using"
-Resolution     "1"   --&gt;   "1..*"  Claim              : "supported/denied by"
+%% ────────────────────────────────────────────────
+%% Detailed descriptions as notes (GitHub-safe)
+%% ────────────────────────────────────────────────
+
+note for Resolution "Formal statement that sets the topic for the debate —&lt;br&gt;one side affirms, the other negates"
+
+note for Framework "Set of principles or standards used to evaluate the resolution,&lt;br&gt;explaining why a particular perspective is the best way to judge the arguments presented"
+
+note for Claim "An assertion made by a debater, stating a belief or position&lt;br&gt;(that needs to be supported by evidence)&lt;br&gt;&lt;br&gt;Direction indicates whether the claim supports or denies the Resolution"
+
+note for Rebuttal "Response to an opponent's argument, where a debater either disagrees or refutes a claim, warrant or impact,&lt;br&gt;often by providing counter-evidence or demonstrating flaws in the logic"
+
+note for Turn "An argument that reverses the meaning or effect of an opponent's argument,&lt;br&gt;showing that their point actually supports the opposing side"
+
+note for Impact "The consequence or significance of the argument,&lt;br&gt;quantifying or evaluating how the outcome affects people or society,&lt;br&gt;and explaining why the argument matters"
+
+note for Warrant "Provides the logical reason or justification for why the statement is true,&lt;br&gt;explaining the connection between the statement and the evidence"
+
+note for Evidence "Serves as the support for the warrant,&lt;br&gt;taking the form of statistics, specific examples, testimony, or expert opinion,&lt;br&gt;and is used to compel the audience to accept the reason"
+
+%% ────────────────────────────────────────────────
+%% Relationships (unchanged)
+%% ────────────────────────────────────────────────
+
+Resolution     "1"   --&gt;   "1"     Framework          : "is evaluated using"
+Resolution     "1"   --&gt;   "1..*"  Claim              : "is supported/denied by"
 
 Claim          "1"   --&gt;   "0..1"  Impact
 Claim          "1"   --&gt;   "0..1"  Turn
@@ -1500,42 +1495,8 @@ Rebuttal       "1"   --&gt;   "0..1"  Warrant
 Warrant        "1"   --&gt;   "0..1"  Claim              : "justifies or proves"
 Warrant        "1"   --&gt;   "0..1"  Rebuttal           : "justifies or proves"
 
-Evidence       "*"   --&gt;   "0..*"  Warrant            : "supports"
-
-note for Claim "Direction: Pro / Con (supports / denies Resolution)"</code></pre>
+Evidence       "*"   --&gt;   "0..*"  Warrant            : "supports"</code></pre>
     </details>
-
-<h3 id="title-feature-notes">Title Feature Notes</h3>
-<p>Text
-Additional paragraphs go here, also indented by 4 spaces.</p>
-<p>### Text 2</p>
-<details>
-    <summary>Collapsible Tech Section</summary>
-    More technical content here (native HTML, no styling needed).
-
-    <pre class="mermaid"><code>---
-title: Template Flow Diagram
----
-flowchart TD
-    A[User opens Voting Box] --&gt; B{Debate active?}
-    B --&gt;|Yes| C[Click 'New Vote']
-    B --&gt;|No| D[Error: Debate closed]
-    C --&gt; E[Enter proposal details]
-    E --&gt; F[Set options &amp; duration]
-    F --&gt; G[Submit]
-    G --&gt; H[Vote listed &amp; votable]
-    style A fill:#C91616,stroke:#333
-    style H fill:#C91616,stroke:#333</code></pre>
-    </details>
-
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">[ TECHNICAL NOTES ]</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<h3 id="title-technical-notes">Title Technical Notes</h3>
-<p>Text</p>
-</div>
-</div>
-</div>
 
 
 
