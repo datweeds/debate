@@ -42,17 +42,19 @@ If everyone follows this formal structure then the debates are much easier to re
     direction TB
 
     class RESOLUTION {
-        +String text
-        Topic for debate
+        a formal statement that sets
+        the topic for the debate,
+        which one side affirms
+        and the other side negates
     }
 
     class FRAMEWORK {
-        +String principles
+        String principles
         Evaluation standards
     }
 
     class CLAIM {
-        +String content
+        String content
         Assertion for or against
     }
 
@@ -82,7 +84,7 @@ If everyone follows this formal structure then the debates are much easier to re
     CLAIM          "1"   -->   "0..1"  IMPACT
     CLAIM          "1"   -->   "0..1"  TURN
     CLAIM          "1"   -->   "0..1"  WARRANT            : "justifies or proves"
-    CLAIM          "1"   -->   "0..1"  Rebuttal           : "can be rebutted"
+    CLAIM          "1"   -->   "0..1"  REBUTTAL           : "can be rebutted"
 
     TURN           "1"   -->   "0..1"  CLAIM
     TURN           "1"   -->   "0..1"  IMPACT             : "turns"
@@ -94,10 +96,10 @@ If everyone follows this formal structure then the debates are much easier to re
     REBUTTAL       "1"   -->   "0..1"  IMPACT
     REBUTTAL       "1"   -->   "0..1"  WARRANT
 
-    WARRANT        "1"   -->   "0..1"  Claim              : "justifies or proves"
-    WARRANT        "1"   -->   "0..1"  Rebuttal           : "justifies or proves"
+    WARRANT        "1"   -->   "0..1"  CLAIM              : "justifies or proves"
+    WARRANT        "1"   -->   "0..1"  REBUTTAL           : "justifies or proves"
 
-    EVIDENCE       "*"   -->   "0..*"  Warrant            : "supports"
+    EVIDENCE       "*"   -->   "0..*"  WARRANT            : "supports"
     ```
     </details>
 
