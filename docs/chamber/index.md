@@ -32,18 +32,7 @@ If everyone follows this formal structure then the debates are much easier to re
  <details>
     <summary>Debate Structure Diagram</summary>
     Here is a diagram that shows how the different types of statement relate to each other in an argument
-     
-   ```mermaid
-    classDiagram
-    direction TB
-    class A {
-        +String name
-    }
-    class B {
-        +int age
-    }
-    A --> B
-    ```
+
     </details>
 
 ### Title Feature Notes
