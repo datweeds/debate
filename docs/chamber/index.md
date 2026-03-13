@@ -35,59 +35,50 @@ If everyone follows this formal structure then the debates are much easier to re
 
      
     ```mermaid
+    ---
+    title: Debate Structure Diagram
+    ---
     classDiagram
     direction TB
 
     class Resolution {
         +String text
+        Formal statement that sets the topic for the debate - one side affirms and the other negates
     }
 
     class Framework {
         +String principles
+        Set of principles or standards used to evaluate the resolution - explaining why a particular perspective is the best way to judge the arguments presented
     }
 
     class Claim {
         +String content
         +Direction direction
+        Assertion made by a debater stating a belief or position that needs to be supported by evidence. Direction indicates whether the claim supports or denies the Resolution
     }
 
     class Rebuttal {
+        Response to an opponent's argument where a debater disagrees or refutes a claim warrant or impact - often by providing counter-evidence or showing flaws in the logic
     }
 
     class Turn {
+        Argument that reverses the meaning or effect of an opponent's argument - showing that their point actually supports the opposing side
     }
 
     class Impact {
+        Consequence or significance of the argument - quantifying or evaluating how the outcome affects people or society and explaining why the argument matters
     }
 
     class Warrant {
+        Logical reason or justification for why the statement is true - explaining the connection between the statement and the evidence
     }
 
     class Evidence {
+        Support for the warrant taking the form of statistics specific examples testimony or expert opinion - used to compel the audience to accept the reason
     }
 
     %% ────────────────────────────────────────────────
-    %% Detailed descriptions as notes (GitHub-safe)
-    %% ────────────────────────────────────────────────
-
-    note for Resolution "Formal statement that sets the topic for the debate —<br>one side affirms, the other negates"
-
-    note for Framework "Set of principles or standards used to evaluate the resolution,<br>explaining why a particular perspective is the best way to judge the arguments presented"
-
-    note for Claim "An assertion made by a debater, stating a belief or position<br>(that needs to be supported by evidence)<br><br>Direction indicates whether the claim supports or denies the Resolution"
-
-    note for Rebuttal "Response to an opponent's argument, where a debater either disagrees or refutes a claim, warrant or impact,<br>often by providing counter-evidence or demonstrating flaws in the logic"
-
-    note for Turn "An argument that reverses the meaning or effect of an opponent's argument,<br>showing that their point actually supports the opposing side"
-
-    note for Impact "The consequence or significance of the argument,<br>quantifying or evaluating how the outcome affects people or society,<br>and explaining why the argument matters"
-
-    note for Warrant "Provides the logical reason or justification for why the statement is true,<br>explaining the connection between the statement and the evidence"
-
-    note for Evidence "Serves as the support for the warrant,<br>taking the form of statistics, specific examples, testimony, or expert opinion,<br>and is used to compel the audience to accept the reason"
-
-    %% ────────────────────────────────────────────────
-    %% Relationships (unchanged)
+    %% Relationships (unchanged - these are safe)
     %% ────────────────────────────────────────────────
 
     Resolution     "1"   -->   "1"     Framework          : "is evaluated using"
