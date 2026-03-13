@@ -1426,17 +1426,19 @@ classDiagram
 direction TB
 
 class RESOLUTION {
-    +String text
-    Topic for debate
+    a formal statement that sets
+    the topic for the debate,
+    which one side affirms
+    and the other side negates
 }
 
 class FRAMEWORK {
-    +String principles
+    String principles
     Evaluation standards
 }
 
 class CLAIM {
-    +String content
+    String content
     Assertion for or against
 }
 
@@ -1466,7 +1468,7 @@ RESOLUTION     "1"   --&gt;   "1..*"  CLAIM              : "supported or denied 
 CLAIM          "1"   --&gt;   "0..1"  IMPACT
 CLAIM          "1"   --&gt;   "0..1"  TURN
 CLAIM          "1"   --&gt;   "0..1"  WARRANT            : "justifies or proves"
-CLAIM          "1"   --&gt;   "0..1"  Rebuttal           : "can be rebutted"
+CLAIM          "1"   --&gt;   "0..1"  REBUTTAL           : "can be rebutted"
 
 TURN           "1"   --&gt;   "0..1"  CLAIM
 TURN           "1"   --&gt;   "0..1"  IMPACT             : "turns"
@@ -1478,10 +1480,10 @@ REBUTTAL       "1"   --&gt;   "0..1"  CLAIM
 REBUTTAL       "1"   --&gt;   "0..1"  IMPACT
 REBUTTAL       "1"   --&gt;   "0..1"  WARRANT
 
-WARRANT        "1"   --&gt;   "0..1"  Claim              : "justifies or proves"
-WARRANT        "1"   --&gt;   "0..1"  Rebuttal           : "justifies or proves"
+WARRANT        "1"   --&gt;   "0..1"  CLAIM              : "justifies or proves"
+WARRANT        "1"   --&gt;   "0..1"  REBUTTAL           : "justifies or proves"
 
-EVIDENCE       "*"   --&gt;   "0..*"  Warrant            : "supports"</code></pre>
+EVIDENCE       "*"   --&gt;   "0..*"  WARRANT            : "supports"</code></pre>
     </details>
 
 
