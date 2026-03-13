@@ -8,7 +8,7 @@
 
 ---
 
-'' Introduction to Debating
+## Introduction to Debating
 
 Welcome to debate.report, an online platform for structured, asynchronous debates on diverse topics. This guide is designed for new debaters to help you navigate the platform, understand the roles in the debating process, and to help you build effective arguments and have your voice heard. Whether you're new to debating or transitioning to online formats, this guide will equip you with the essentials to participate confidently.
 
@@ -32,13 +32,14 @@ If everyone follows this formal structure then the debates are much easier to re
  <details>
     <summary>Debate Structure Diagram</summary>
     Here is a diagram that shows how the different types of statement relate to each other in an argument
+     
     ```mermaid
     ---
     title: Debate Structure Diagram
     ---
-   %%{init: {
-  'theme': 'base',
-  'themeVariables': {
+    %%{init: {
+    'theme': 'base',
+    'themeVariables': {
     'classText': '#333333',
     'primaryColor': '#f0f0f0',
     'primaryBorderColor': '#cccccc',
@@ -125,16 +126,15 @@ classDiagram
     ```
     </details>
 
-=== "[ FEATURES ]"
-
-    ### Title Feature Notes
-    Text
-    Additional paragraphs go here, also indented by 4 spaces.
+### Title Feature Notes
+Text
+Additional paragraphs go here, also indented by 4 spaces.
     
-    ### Text 2
-    <details>
+ ### Text 2
+<details>
     <summary>Collapsible Tech Section</summary>
     More technical content here (native HTML, no styling needed).
+    
     ```mermaid
     ---
     title: Template Flow Diagram
