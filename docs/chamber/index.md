@@ -33,7 +33,6 @@ If everyone follows this formal structure then the debates are much easier to re
     <summary>Debate Structure Diagram</summary>
     Here is a diagram that shows how the different types of statement relate to each other in an argument
 
-     
     ```mermaid
     ---
     title: Debate Structure Diagram
@@ -43,14 +42,14 @@ If everyone follows this formal structure then the debates are much easier to re
 
     class RESOLUTION {
         a formal statement that sets
-        the topic for the debate,
+        the topic for the debate
         which one side affirms
         and the other side negates
     }
 
     class FRAMEWORK {
         set of principles or standards
-        used to evaluate the resolution,
+        used to evaluate the resolution
         explaining why a particular
         perspective is the best
         way to judge the arguments
@@ -58,7 +57,7 @@ If everyone follows this formal structure then the debates are much easier to re
     }
 
     class CLAIM {
-        an assertion made by a debater,
+        an assertion made by a debater
         stating a belief or position
         (that needs to be supported
         by evidence)
@@ -69,7 +68,7 @@ If everyone follows this formal structure then the debates are much easier to re
         argument, where a debater
         either disagrees or refutes
         a claim, warrant or impact,
-        often by providing counter-
+        often by providing counter
         evidence or demonstrating 
         flaws to the logic
     }
