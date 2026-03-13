@@ -1425,68 +1425,63 @@ title: Debate Structure Diagram
 classDiagram
 direction TB
 
-class Resolution {
+class RESOLUTION {
     +String text
-    Formal statement that sets the topic for the debate - one side affirms and the other negates
+    Topic for debate
 }
 
-class Framework {
+class FRAMEWORK {
     +String principles
-    Set of principles or standards used to evaluate the resolution - explaining why a particular perspective is the best way to judge the arguments presented
+    Evaluation standards
 }
 
-class Claim {
+class CLAIM {
     +String content
-    +Direction direction
-    Assertion made by a debater stating a belief or position that needs to be supported by evidence. Direction indicates whether the claim supports or denies the Resolution
+    Assertion for or against
 }
 
-class Rebuttal {
-    Response to an opponent's argument where a debater disagrees or refutes a claim warrant or impact - often by providing counter-evidence or showing flaws in the logic
+class REBUTTAL {
+    Counter-argument
 }
 
-class Turn {
-    Argument that reverses the meaning or effect of an opponent's argument - showing that their point actually supports the opposing side
+class TURN {
+    Argument reversal
 }
 
-class Impact {
-    Consequence or significance of the argument - quantifying or evaluating how the outcome affects people or society and explaining why the argument matters
+class IMPACT {
+    Argument significance
 }
 
-class Warrant {
-    Logical reason or justification for why the statement is true - explaining the connection between the statement and the evidence
+class WARRANT {
+    Logical justification
 }
 
-class Evidence {
-    Support for the warrant taking the form of statistics specific examples testimony or expert opinion - used to compel the audience to accept the reason
+class EVIDENCE {
+    Data, examples, expert opinion
 }
 
-%% ────────────────────────────────────────────────
-%% Relationships (unchanged - these are safe)
-%% ────────────────────────────────────────────────
+RESOLUTION     "1"   --&gt;   "1"     FRAMEWORK          : "evaluated using"
+RESOLUTION     "1"   --&gt;   "1..*"  CLAIM              : "supported or denied by"
 
-Resolution     "1"   --&gt;   "1"     Framework          : "is evaluated using"
-Resolution     "1"   --&gt;   "1..*"  Claim              : "is supported/denied by"
+CLAIM          "1"   --&gt;   "0..1"  IMPACT
+CLAIM          "1"   --&gt;   "0..1"  TURN
+CLAIM          "1"   --&gt;   "0..1"  WARRANT            : "justifies or proves"
+CLAIM          "1"   --&gt;   "0..1"  Rebuttal           : "can be rebutted"
 
-Claim          "1"   --&gt;   "0..1"  Impact
-Claim          "1"   --&gt;   "0..1"  Turn
-Claim          "1"   --&gt;   "0..1"  Warrant            : "justifies or proves"
-Claim          "1"   --&gt;   "0..1"  Rebuttal           : "can be rebutted"
+TURN           "1"   --&gt;   "0..1"  CLAIM
+TURN           "1"   --&gt;   "0..1"  IMPACT             : "turns"
 
-Turn           "1"   --&gt;   "0..1"  Claim
-Turn           "1"   --&gt;   "0..1"  Impact             : "turns"
+IMPACT         "1"   ..&gt;   "0..1"  TURN               : "impacts"
 
-Impact         "1"   ..&gt;   "0..1"  Turn               : "impacts"
+REBUTTAL       "1"   --&gt;   "0..1"  TURN
+REBUTTAL       "1"   --&gt;   "0..1"  CLAIM
+REBUTTAL       "1"   --&gt;   "0..1"  IMPACT
+REBUTTAL       "1"   --&gt;   "0..1"  WARRANT
 
-Rebuttal       "1"   --&gt;   "0..1"  Turn
-Rebuttal       "1"   --&gt;   "0..1"  Claim
-Rebuttal       "1"   --&gt;   "0..1"  Impact
-Rebuttal       "1"   --&gt;   "0..1"  Warrant
+WARRANT        "1"   --&gt;   "0..1"  Claim              : "justifies or proves"
+WARRANT        "1"   --&gt;   "0..1"  Rebuttal           : "justifies or proves"
 
-Warrant        "1"   --&gt;   "0..1"  Claim              : "justifies or proves"
-Warrant        "1"   --&gt;   "0..1"  Rebuttal           : "justifies or proves"
-
-Evidence       "*"   --&gt;   "0..*"  Warrant            : "supports"</code></pre>
+EVIDENCE       "*"   --&gt;   "0..*"  Warrant            : "supports"</code></pre>
     </details>
 
 
