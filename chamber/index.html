@@ -1440,6 +1440,69 @@
     <summary>Debate Structure Diagram</summary>
     Here is a diagram that shows how the different types of statement relate to each other in an argument
 
+
+    <pre class="mermaid"><code>---
+title: Debate Structure Diagram
+---
+classDiagram
+direction TB
+
+class Resolution {
+    Formal statement setting the debate topic
+}
+
+class Framework {
+    Principles or standards for evaluation
+}
+
+class Claim {
+    Assertion of belief or position
+}
+
+class Rebuttal {
+    Response refuting opponent's point
+}
+
+class Turn {
+    Argument reversing opponent's point
+}
+
+class Impact {
+    Consequence or significance of argument
+}
+
+class Warrant {
+    Logical justification linking evidence to claim
+}
+
+class Evidence {
+    Statistics, examples, testimony
+}
+
+Resolution     "1"   --&gt;   "1"     Framework          : "evaluated using"
+Resolution     "1"   --&gt;   "1..*"  Claim              : "supported/denied by"
+
+Claim          "1"   --&gt;   "0..1"  Impact
+Claim          "1"   --&gt;   "0..1"  Turn
+Claim          "1"   --&gt;   "0..1"  Warrant            : "justifies or proves"
+Claim          "1"   --&gt;   "0..1"  Rebuttal           : "can be rebutted"
+
+Turn           "1"   --&gt;   "0..1"  Claim
+Turn           "1"   --&gt;   "0..1"  Impact             : "turns"
+
+Impact         "1"   ..&gt;   "0..1"  Turn               : "impacts"
+
+Rebuttal       "1"   --&gt;   "0..1"  Turn
+Rebuttal       "1"   --&gt;   "0..1"  Claim
+Rebuttal       "1"   --&gt;   "0..1"  Impact
+Rebuttal       "1"   --&gt;   "0..1"  Warrant
+
+Warrant        "1"   --&gt;   "0..1"  Claim              : "justifies or proves"
+Warrant        "1"   --&gt;   "0..1"  Rebuttal           : "justifies or proves"
+
+Evidence       "*"   --&gt;   "0..*"  Warrant            : "supports"
+
+note for Claim "Direction: Pro / Con (supports / denies Resolution)"</code></pre>
     </details>
 
 <h3 id="title-feature-notes">Title Feature Notes</h3>
