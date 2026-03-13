@@ -34,6 +34,7 @@ If everyone follows this formal structure then the debates are much easier to re
     Here is a diagram that shows how the different types of statement relate to each other in an argument
 
     ```mermaid
+    
     ---
     title: Debate Structure Diagram
     ---
@@ -59,12 +60,11 @@ If everyone follows this formal structure then the debates are much easier to re
     class CLAIM {
         an assertion made by a debater
         stating a belief or position
-        (that needs to be supported
-        by evidence)
+        supported by evidence
     }
 
     class REBUTTAL {
-        response to an opponent's
+        response to an opponent
         argument, where a debater
         either disagrees or refutes
         a claim, warrant or impact,
