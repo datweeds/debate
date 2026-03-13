@@ -70,8 +70,7 @@ If everyone follows this formal structure then the debates are much easier to re
     class TURN {
         an argument that reverses
         the meaning or effect
-        of an opponent's argument,
-        showing that their point
+        of an opponent's argument
     }
 
     class IMPACT {
@@ -103,15 +102,15 @@ If everyone follows this formal structure then the debates are much easier to re
     CLAIM          "1"   -->   "0..1"  WARRANT            : "justifies or proves"
     CLAIM          "1"   -->   "0..1"  REBUTTAL           : "can be rebutted"
 
-    TURN           "1"   -->   "0..1"  CLAIM
+    TURN           "1"   -->   "0..1"  CLAIM              : "turns"
     TURN           "1"   -->   "0..1"  IMPACT             : "turns"
 
     IMPACT         "1"   ..>   "0..1"  TURN               : "impacts"
 
-    REBUTTAL       "1"   -->   "0..1"  TURN
-    REBUTTAL       "1"   -->   "0..1"  CLAIM
-    REBUTTAL       "1"   -->   "0..1"  IMPACT
-    REBUTTAL       "1"   -->   "0..1"  WARRANT
+    REBUTTAL       "1"   -->   "0..1"  TURN               : "rebutts"
+    REBUTTAL       "1"   -->   "0..1"  CLAIM              : "disagrees or disproves"
+    REBUTTAL       "1"   -->   "0..1"  IMPACT             : rebutts
+    REBUTTAL       "1"   -->   "0..1"  WARRANT            : rebutts
 
     WARRANT        "1"   -->   "0..1"  CLAIM              : "justifies or proves"
     WARRANT        "1"   -->   "0..1"  REBUTTAL           : "justifies or proves"
@@ -119,6 +118,67 @@ If everyone follows this formal structure then the debates are much easier to re
     EVIDENCE       "*"   -->   "0..*"  WARRANT            : "supports"
     ```
     </details>
+
+Note - a discussion point can be posted against any type of statement although the lines are not represented on the diagram to allow the other lines of association to be clearer.
+
+## Statement Types
+### Resolution
+A resolution statement in a debate serves as the central proposition that defines the topic and the specific stance to be argued, acting as the foundation for the entire discussion. It is typically a clear, concise, and balanced statement that presents a specific issue, often framed as a policy change, a factual claim, or a value judgment. The resolution sets the scope and focus of the debate, guiding the arguments and evidence presented by both sides.
+
+The resolution is usually structured with a prefix (like "Resolved:", "This house believes that", or "Be it resolved") followed by a subject (the main topic) and a predicate (the specific claim or stance).
+
+For example, *"Resolved: The United States federal government should adopt a universal health care system"*.
+This format clearly establishes the position the affirmative team must defend and the position the negative team must oppose.
+
+In a policy debate, the affirmative team proposes a specific plan to implement the resolution, while the negative team argues against the plan's solvency, feasibility, or desirability. In a scientific debate, the affirmative team proposes reasons why the resolution is true, which the negative team argues why it is false.
+
+The rules for using Resolutions (sometimes called a motion or proposal) are:
+
+- One Resolution statement is crafted by the debate moderator to clearly set out the intentions or findings to be debated. The ensuing debate will then determine the level of support for it. The resolution remains fixed throughout the debate to maintain fairness and structure.
+- If the moderator wishes to change a resolution they must create a new one and request debaters to consider the new resolution and whether they want to transfer their arguments from the old one to the new one. The old resolution can then be closed.
+- A Resolution can have the following types of statement attached to it: claim, framework
+
+### Framework
+A framework statement in a debate functions as the lens or set of criteria through which the judge evaluates the arguments presented during the round and ultimately determines the winner. It establishes the rules for judging by specifying how the impacts of the arguments should be prioritized and compared. Without a framework, the judge might rely on subjective judgment, such as which side was more convincing, leading to unpredictable and potentially biased outcomes. By proposing a framework, debaters essentially define how the ballot should be filled out, re-writing the implicit rule of "whoever convinces me wins" into a more structured standard.
+
+A framework typically consists of two main parts: the method for evaluating the round (the rules) and the justification for why the judge should use that method (the warrant). Common frameworks include 
+
+- ***cost-benefit analysis***, which weighs the advantages and disadvantages of a position
+- ***utilitarianism***, which prioritizes the greatest good for the greatest number
+- ***human rights***, which emphasizes moral obligations to uphold dignity
+- ***national security***, which focuses on the safety of the United States.
+
+The framework should be relevant to the resolution and support the debater's case, often being constructed to nullify the opponent's arguments and make the debater's own case easier to defend.
+
+Debaters can argue for their framework using three types of arguments: 
+
+- ***resolution-specific arguments***, which use the wording or intent of the resolution to justify the framework
+- ***internal arguments***, which assess the fairness and practicality of the framework for the round, such as whether it places an unfair burden on one side
+- ***external arguments***, which consider the broader implications of adopting a framework, such as whether it promotes a realistic or educational debate environment.
+
+A strong framework is one that is fair, supports the debater's case, and is easy to defend.
+
+The rules for using Frameworks are:
+
+- One Framework statement can be attached to a Resolution. Any views or parameters necessary to frame the debate should be described in the framework statement. 
+- A Framework cannot be attached to any other type of statement, only to the Resolution.
+
+### Claim
+an assertion made by a debater, stating a belief or position (that needs to be supported by evidence)
+
+### Rebuttal
+response to an opponent's argument, where a debater either disagrees or refutes a claim, warrant or impact, often by providing counter-evidence or demonstrating flaws to the logic
+
+### Tur
+an argument that reverses the meaning or effect of an opponent's argument, showing that their point actually supports the opposing side 
+
+### Impac
+the consequence or significance of the argument, quantifying or evaluating how the outcome affects people or society, and explaining why the argument matters.
+
+### Evidence
+serves as the support for the warrant, taking the form of statistics, specific examples, testimony, or expert opinion, and is used to compel the audience to accept the reason
+
+### Warrant - provides the logical reason or justification for why the statement is true, explaining the connection between the statement and the evidence  
 
 
 
