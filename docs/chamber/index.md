@@ -34,7 +34,6 @@ If everyone follows this formal structure then the debates are much easier to re
     Here is a diagram that shows how the different types of statement relate to each other in an argument
 
     ```mermaid
-    
     ---
     title: Debate Structure Diagram
     ---
@@ -53,8 +52,6 @@ If everyone follows this formal structure then the debates are much easier to re
         used to evaluate the resolution
         explaining why a particular
         perspective is the best
-        way to judge the arguments
-        presented
     }
 
     class CLAIM {
@@ -67,10 +64,7 @@ If everyone follows this formal structure then the debates are much easier to re
         response to an opponent
         argument, where a debater
         either disagrees or refutes
-        a claim, warrant or impact,
-        often by providing counter
-        evidence or demonstrating 
-        flaws to the logic
+        a claim, warrant or impact
     }
 
     class TURN {
@@ -78,35 +72,27 @@ If everyone follows this formal structure then the debates are much easier to re
         the meaning or effect
         of an opponent's argument,
         showing that their point
-        actually supports the opposing 
-        side
     }
 
     class IMPACT {
         the consequence or significance
         of the argument, quantifying
         or evaluating how the outcome
-        affects people or society,
-        and explaining why the
-        argument matters.
+        affects people or society
     }
 
     class WARRANT {
         provides the logical reason
         or justification for why
         the statement is true,
-        explaining the connection 
-        between the statement and the
-        evidence  
+        explaining the connection  
     }
 
     class EVIDENCE {
         serves as the support for
         the warrant, taking the form
         of statistics, specific examples,
-        testimony, or expert opinion,
-        and is used to compel the
-        audience to accept the reason
+        testimony, or expert opinion
     }
 
     RESOLUTION     "1"   -->   "1"     FRAMEWORK          : "evaluated using"
