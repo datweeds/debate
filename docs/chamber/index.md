@@ -35,46 +35,63 @@ If everyone follows this formal structure then the debates are much easier to re
 
      
     ```mermaid
-    ---
-    title: Debate Structure Diagram
-    ---
     classDiagram
     direction TB
 
     class Resolution {
-        Formal statement setting the debate topic
+        +String text
     }
 
     class Framework {
-        Principles or standards for evaluation
+        +String principles
     }
 
     class Claim {
-        Assertion of belief or position
+        +String content
+        +Direction direction
     }
 
     class Rebuttal {
-        Response refuting opponent's point
     }
 
     class Turn {
-        Argument reversing opponent's point
     }
 
     class Impact {
-        Consequence or significance of argument
     }
 
     class Warrant {
-        Logical justification linking evidence to claim
     }
 
     class Evidence {
-        Statistics, examples, testimony
     }
 
-    Resolution     "1"   -->   "1"     Framework          : "evaluated using"
-    Resolution     "1"   -->   "1..*"  Claim              : "supported/denied by"
+    %% ────────────────────────────────────────────────
+    %% Detailed descriptions as notes (GitHub-safe)
+    %% ────────────────────────────────────────────────
+
+    note for Resolution "Formal statement that sets the topic for the debate —<br>one side affirms, the other negates"
+
+    note for Framework "Set of principles or standards used to evaluate the resolution,<br>explaining why a particular perspective is the best way to judge the arguments presented"
+
+    note for Claim "An assertion made by a debater, stating a belief or position<br>(that needs to be supported by evidence)<br><br>Direction indicates whether the claim supports or denies the Resolution"
+
+    note for Rebuttal "Response to an opponent's argument, where a debater either disagrees or refutes a claim, warrant or impact,<br>often by providing counter-evidence or demonstrating flaws in the logic"
+
+    note for Turn "An argument that reverses the meaning or effect of an opponent's argument,<br>showing that their point actually supports the opposing side"
+
+    note for Impact "The consequence or significance of the argument,<br>quantifying or evaluating how the outcome affects people or society,<br>and explaining why the argument matters"
+
+    note for Warrant "Provides the logical reason or justification for why the statement is true,<br>explaining the connection between the statement and the evidence"
+
+    note for Evidence "Serves as the support for the warrant,<br>taking the form of statistics, specific examples, testimony, or expert opinion,<br>and is used to compel the audience to accept the reason"
+
+    %% ────────────────────────────────────────────────
+    %% Relationships (unchanged)
+    %% ────────────────────────────────────────────────
+
+    Resolution     "1"   -->   "1"     Framework          : "is evaluated using"
+    Resolution     "1"   -->   "1..*"  Claim              : "is supported/denied by"
 
     Claim          "1"   -->   "0..1"  Impact
     Claim          "1"   -->   "0..1"  Turn
@@ -95,38 +112,8 @@ If everyone follows this formal structure then the debates are much easier to re
     Warrant        "1"   -->   "0..1"  Rebuttal           : "justifies or proves"
 
     Evidence       "*"   -->   "0..*"  Warrant            : "supports"
-
-    note for Claim "Direction: Pro / Con (supports / denies Resolution)"
     ```
     </details>
 
-### Title Feature Notes
-Text
-Additional paragraphs go here, also indented by 4 spaces.
-    
- ### Text 2
-<details>
-    <summary>Collapsible Tech Section</summary>
-    More technical content here (native HTML, no styling needed).
-    
-    ```mermaid
-    ---
-    title: Template Flow Diagram
-    ---
-    flowchart TD
-        A[User opens Voting Box] --> B{Debate active?}
-        B -->|Yes| C[Click 'New Vote']
-        B -->|No| D[Error: Debate closed]
-        C --> E[Enter proposal details]
-        E --> F[Set options & duration]
-        F --> G[Submit]
-        G --> H[Vote listed & votable]
-        style A fill:#C91616,stroke:#333
-        style H fill:#C91616,stroke:#333
-    ```
-    </details>
 
-=== "[ TECHNICAL NOTES ]"
-    ### Title Technical Notes
-    Text
 
