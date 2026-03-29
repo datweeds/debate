@@ -34,10 +34,12 @@ Click ***+*** to expand the subject area panel (***-*** collapse again). All deb
 ### Favourite Debates
 If you are logged in you can tag any debate as a ***favourite*** and it will appear in this table for quick reference. Clicking on a favourite debate takes you straight to that debate in the [debate chamber](chamber/index.md). You will also see a heart icon in the [chamber](chamber/index.md) and in the [switch panel](chamber/switch.md) . This helps to personalise the debate platform and filter out debates you are not so interested in.
 
-## Header and Footer
-### Header
+### What's Hot?
+This section lists the 20 debate resolutions that have had most recent changes or additions to their arguments, or have seen the most recent voting or chat activity. Click on a debate to go to it in the Chamber.
 
+[b]Recent Events / Stat[/b] - the most recent date that a statement was created or modified in the debate
+[b]Recent Events / Vote[/b] - the most recent date that a vote was cast on any statement in the debate
+[b]Recent Events / Comm[/b] - the most recent date that a chat comment was created or modified in the debate
 
-### Footer
 
 
