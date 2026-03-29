@@ -9,4 +9,4 @@
 
 ---
 ## News Letter
-This page lists previous newsletters and allows you to view and read them. You can also subscribe to the newsletter here. To un-subscribe please go the the profile page and un-tick the subscribe button there.
+This page lists previous newsletters and allows you to view and read them. You can also subscribe to the newsletter here. To un-subscribe please go the the [profile](account/profile.md) page and un-tick the subscribe button there.
