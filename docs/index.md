@@ -25,6 +25,21 @@ First, view the notes below which relate to the home page. After that, the best 
 
 Happy debating!
 
+## Site Header
+The header appears on top of all pages and comprises:
+
+### Menu system (3 horizontal lines)
+Use this to access chamber subject areas, the dashboard, and the Guide. Mobile version has a cut-down menu that does not allow access to the chamber since chamber is not currently supported on mobile devices.
+
+### debate.report title
+Use this to return to the index/home page.
+
+### Profile icon
+An icon of a human portrait. Coloured grey if user is not logged in - click to log in. Coloured red if logged it - click to access the [profile](account/profile.md) page.
+
+## Site Footer
+The footer appears at the bottom of all pages, and comprises links to Terms & Conditions, Privacy Policy, About Us, [news](news.md), and [contact us](account/contact.md) pages.
+
 ## Home Page (Index)
 The index page is the landing page for the debate platform and provides basic information to assist new users find their way about.
 
