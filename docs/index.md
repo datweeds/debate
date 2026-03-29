@@ -52,9 +52,9 @@ If you are logged in you can tag any debate as a ***favourite*** and it will app
 ### What's Hot?
 This section lists the 20 debate resolutions that have had most recent changes or additions to their arguments, or have seen the most recent voting or chat activity. Click on a debate to go to it in the Chamber.
 
-[b]Recent Events / Stat[/b] - the most recent date that a statement was created or modified in the debate
-[b]Recent Events / Vote[/b] - the most recent date that a vote was cast on any statement in the debate
-[b]Recent Events / Comm[/b] - the most recent date that a chat comment was created or modified in the debate
+- ***Recent Events / Stat*** - the most recent date that a statement was created or modified in the debate
+- ***Recent Events / Vote*** - the most recent date that a vote was cast on any statement in the debate
+- ***Recent Events / Comm*** - the most recent date that a chat comment was created or modified in the debate
 
 
 
