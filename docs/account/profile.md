@@ -51,12 +51,12 @@ Set to 'active' if you can vote/debate, or inactive if you have paused or delete
 The number of statements you have created, if a Debater or Moderator.
 
 ### Payment Plan
-
+This tells you how much you pay each month or year
 
 ### Status (Payments)
 Indicates the status of your payment subscripotion workflow. Should show 'complete' if your payment was successfully processed.
 
-### Stripoe Sub_Id
+### Stripe Sub_Id
 Your subscription Id from Stripe, which you may need when communicating with Stripe
 
 ## Button 'Upgrade to full Public Forum access'
