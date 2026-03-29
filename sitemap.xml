@@ -9,10 +9,6 @@
          <lastmod>2026-03-29</lastmod>
     </url>
     <url>
-         <loc>https://debate.support/news/</loc>
-         <lastmod>2026-03-29</lastmod>
-    </url>
-    <url>
          <loc>https://debate.support/account/</loc>
          <lastmod>2026-03-29</lastmod>
     </url>
@@ -102,6 +98,10 @@
     </url>
     <url>
          <loc>https://debate.support/dashboard/your-votes/</loc>
+         <lastmod>2026-03-29</lastmod>
+    </url>
+    <url>
+         <loc>https://debate.support/shared/news/</loc>
          <lastmod>2026-03-29</lastmod>
     </url>
     <url>
