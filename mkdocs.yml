@@ -20,15 +20,9 @@ theme:
 
 nav:
   - Home: index.md
-  - 1] DEBATE THEORY:
-    - Theory Overview: theory/index.md
-    - Debate Concepts: theory/concepts.md
-    - Roles: theory/roles.md
-    - Logical Fallacy: chamber/fallacy.md
-  - 2] DEBATE CHAMBER:
+  - 1] DEBATE CHAMBER:
     - Chamber Overview: chamber/index.md
     - Switch Debate: chamber/switch.md
-    - Header Panel: chamber/header.md
     - List Panel: chamber/list.md
     - Graph Panel: chamber/graph.md
     - Detail Panel: 
@@ -37,7 +31,7 @@ nav:
       - Chat Room Box: chamber/detail/chat-box.md
       - Voting box: chamber/detail/voting-box.md
       - Debate Actions Box: chamber/detail/action-box.md
-  - 3] DASHBOARD:
+  - 2] DASHBOARD:
     - Dashboard Overview: dashboard/index.md
     - Chat Comments: dashboard/chat.md
     - Your Votes: dashboard/your-votes.md
@@ -48,10 +42,15 @@ nav:
     - AI Arg Generator: dashboard/AI-Args.md
     - Your Debates: dashboard/your-debates.md
     - Last Statement: dashboard/last-statement.md
-  - 4] ACCOUNT:
+  - 3] ACCOUNT:
     - Account Overview: account/index.md
     - Profile: account/profile.md
     - Subscriptions: account/subscription.md
+  - 4] DEBATE THEORY:
+    - Theory Overview: theory/index.md
+    - Debate Concepts: theory/concepts.md
+    - Roles: theory/roles.md
+    - Logical Fallacy: chamber/fallacy.md
     # Add more as needed
 
 markdown_extensions:
