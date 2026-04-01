@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#debate-chamber-overview" class="md-skip">
+        <a href="#introduction-to-the-chamber" class="md-skip">
           Skip to content
         </a>
       
@@ -520,22 +520,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction-to-the-chamber" class="md-nav__link">
+  <a href="#chamber-layout" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Introduction to the Chamber
+        Chamber Layout
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Introduction to the Chamber">
+    <nav class="md-nav" aria-label="Chamber Layout">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#debate-structure" class="md-nav__link">
+  <a href="#graph-panel" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Debate Structure
+        Graph Panel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List Panel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detail-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detail Panel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switch Board
       
     </span>
   </a>
@@ -548,16 +581,38 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#participating-in-a-debate" class="md-nav__link">
+  <a href="#debate-structure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Participating in a Debate
+        Debate Structure
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Participating in a Debate">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-the-debate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading the Debate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reading the Debate">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deductive-vs-inductive-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deductive vs Inductive Arguments
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#starting-and-closing-a-debate" class="md-nav__link">
@@ -1559,7 +1614,6 @@
 
 
 
-<h1 id="debate-chamber-overview">Debate Chamber Overview</h1>
 <details class="warning">
 <summary>Support Notice</summary>
 <p>The <strong>User Guide</strong> is currently undergoing major re-construction, which we are aiming to complete by the end of April 2026. In the meantime please email <a href="mailto:support@debate.report">support@debate.report</a></p>
@@ -1567,100 +1621,28 @@
 <p>the Debate Report Team, March 2026</p>
 </details>
 <hr />
-<h2 id="introduction-to-the-chamber">Introduction to the Chamber</h2>
-<h3 id="debate-structure">Debate Structure</h3>
-<p>As in most debate forums, the debates here have a formal structure which ensures a fair hearing For and Against, and a clear understanding of what is being argued. The debate.report platform ensures the integrity of the debate structure, allowing the you, the debater, to focus on what is really important - getting your points across and making them stick. </p>
-<p>Each debate comprises a resolution statmenet and a collection of other types of statements which are related to each other in a specific way to preserve their logical purpose. For example, the resolution should always have at least two claims attached to it, one For and the other Against, and each claim should have evidence to back it up connected to the claim via a Warrant which lays out the reasons why the evidence backs up the claim. A rebuttal statement can be lodged against most types of statement, except the resolution and the framework statement. The discussion point is not really part of the argument but simply a request for clarity, a question, or a comment. As such they also cannot be rebutted. There are more details about the different types of statement below.</p>
-<p>If everyone follows this formal structure then the debates are much easier to read and understand, and so the <b>debate.report</b> enforces the structure for everyone’s benefit. Here is a graphical representation of the structure applied on the platform.</p>
-<details>
-    <summary>Debate Structure Diagram</summary>
-    Here is a diagram that shows how the different types of statement relate to each other in an argument
-
-    <pre class="mermaid"><code>---
-title: Debate Structure Diagram
----
-classDiagram
-direction TB
-
-class RESOLUTION {
-    a formal statement that sets
-    the topic for the debate
-    which one side affirms
-    and the other side negates
-}
-
-class FRAMEWORK {
-    set of principles or standards
-    used to evaluate the resolution
-    explaining why a particular
-    perspective is the best
-}
-
-class CLAIM {
-    an assertion made by a debater
-    stating a belief or position
-    supported by evidence
-}
-
-class REBUTTAL {
-    response to an opponent
-    argument, where a debater
-    either disagrees or refutes
-    a claim, warrant or impact
-}
-
-class TURN {
-    an argument that reverses
-    the meaning or effect
-    of an opponent's argument
-}
-
-class IMPACT {
-    the consequence or significance
-    of the argument, quantifying
-    or evaluating how the outcome
-    affects people or society
-}
-
-class WARRANT {
-    provides the logical reason
-    or justification for why
-    the statement is true,
-    explaining the connection  
-}
-
-class EVIDENCE {
-    serves as the support for
-    the warrant, taking the form
-    of statistics, specific examples,
-    testimony, or expert opinion
-}
-
-RESOLUTION     "1"   --&gt;   "1"     FRAMEWORK          : "evaluated using"
-RESOLUTION     "1"   --&gt;   "1..*"  CLAIM              : "supported or denied by"
-
-CLAIM          "1"   --&gt;   "0..1"  IMPACT
-CLAIM          "1"   --&gt;   "0..1"  TURN
-CLAIM          "1"   --&gt;   "0..1"  WARRANT            : "justifies or proves"
-CLAIM          "1"   --&gt;   "0..1"  REBUTTAL           : "can be rebutted"
-
-TURN           "1"   --&gt;   "0..1"  CLAIM              : "turns"
-TURN           "1"   --&gt;   "0..1"  IMPACT             : "turns"
-
-IMPACT         "1"   ..&gt;   "0..1"  TURN               : "impacts"
-
-REBUTTAL       "1"   --&gt;   "0..1"  TURN               : "rebutts"
-REBUTTAL       "1"   --&gt;   "0..1"  CLAIM              : "disagrees or disproves"
-REBUTTAL       "1"   --&gt;   "0..1"  IMPACT             : rebutts
-REBUTTAL       "1"   --&gt;   "0..1"  WARRANT            : rebutts
-
-WARRANT        "1"   --&gt;   "0..1"  CLAIM              : "justifies or proves"
-WARRANT        "1"   --&gt;   "0..1"  REBUTTAL           : "justifies or proves"
-
-EVIDENCE       "*"   --&gt;   "0..*"  WARRANT            : "supports"</code></pre>
-    </details>
-
-<h2 id="participating-in-a-debate">Participating in a Debate</h2>
+<h1 id="introduction-to-the-chamber">Introduction to the Chamber</h1>
+<h2 id="chamber-layout">Chamber Layout</h2>
+<p>The chamber is laid out as a set of panels, and all the content on the page relates to one resolution. The panels are:</p>
+<h3 id="graph-panel">Graph Panel</h3>
+<p>Here the arguments are laid out in a colour-coded diagram, in a way that should make it easy to quickly see what's going on. See <a href="graph/">graph panel</a> for more on this.</p>
+<h3 id="list-panel">List Panel</h3>
+<p>Here the same arguments shown in the graph are listed in a table. This allows attributes to be more easily compared and contrasted, e.g. how many votes does each argument have. See <a href="list/">list panel</a> for more on this.</p>
+<h3 id="detail-panel">Detail Panel</h3>
+<p>This panel shows all the details pertaining to one statement, e.g. a claim, rebuttal, etc. This panel also has action buttons allowing you to vote, comment, view science reports, or add argumentation to the debate. Any user, logged in or not, can flag a statement if they believe it contravenes a policy, a regulation, or perhaps just falls short of expected codes of politeness and decency. See <a href="detail/">detail panel</a> for more on this.</p>
+<h3 id="switch-board">Switch Board</h3>
+<p>Technically a popup and not a panel, this is an important part of the chamber and allows you to switch between the debates on different resolutions. See <a href="switch/">switch board</a> for more on this.</p>
+<h2 id="debate-structure">Debate Structure</h2>
+<p>As in most debate forums, the debates here follow a formal structure which ensures a fair hearing For and Against, and a clear understanding of what is being argued. The debate.report platform ensures the integrity of the debate structure, allowing the you, the debater, to focus on what is really important - getting your points across and making them stick. </p>
+<p>Each debate comprises a resolution statement and a collection of other types of statements which are related to each other in a specific way to preserve their logical purpose. For example, the resolution should always have at least two claims attached to it, one For and the other Against, and each claim should have evidence to back it up connected to the claim via a Warrant which lays out the reasons why the evidence backs up the claim. A rebuttal statement can be lodged against most types of statement, except the resolution and the framework statement. The discussion point is not really part of the argument but simply a request for clarity, a question, or a comment. As such they also cannot be rebutted. There are more details about the different types of statement below.</p>
+<p>If everyone follows this formal structure then the debates are much easier to read and understand, and so the <b>debate.report</b> enforces the structure for everyone’s benefit. Here is a graphical representation of the structure applied on the platform. See <a href="statement-types.md">statement types</a> for more detail on the structure and use of different types of statement.</p>
+<h2 id="reading-the-debate">Reading the Debate</h2>
+<p>The graph panel is the best way to read a debate. It breaks down the arguments into pros (blue) and cons (red), lays out the evidence and warrants that connect evidence to the claims, hightlights rebutals, etc. The visual representations is a very powerful way to quickly convey and grasp what's going on. For exanmple, you can immediately see whiuch arguments have no evidence. Take some time to read the debate, try to understand what the debaters are saying, and then form your own views as to whether or not the arguments are accurate and true</p>
+<h3 id="deductive-vs-inductive-arguments">Deductive vs Inductive Arguments</h3>
+<p>In logic, the two primary types of arguments are deductive and inductive, not "logical" versus "non-logical." </p>
+<p>Deductive arguments aim for certainty, where the conclusion is intended to follow with logical necessity from the premises; if the premises are true, the conclusion must be true. 
+Inductive arguments aim for probability, where the conclusion is intended to follow with a high likelihood (but not absolute certainty) given the premises. 
+The terms "valid" and "sound" apply to deductive arguments, while "strong" and "cogent" apply to inductive arguments. Both types are forms of logical reasoning, whereas arguments that fail certan logical tests are classified as fallacies or incorrect reasoning.</p>
 <h3 id="starting-and-closing-a-debate">Starting and Closing a Debate</h3>
 <p>To start a new debate you need to have the Moderator role, this allows you to create new resolutions. 
 Once created, anyone with the debater role, including the moderator, can create arguments for and against the resolution. Currently debates remain open indefinitely, but coming soon is the ability to close a debate either manually or after a set period of time, i.e. anything from hours to months. Once a debate is closed it will still be visible but no more debating or voting will take place unless it is subseqently  re-opened by the moderator.</p>
