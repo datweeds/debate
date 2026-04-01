@@ -32,8 +32,6 @@ Each debate comprises a resolution statement and a collection of other types of 
 If everyone follows this formal structure then the debates are much easier to read and understand, and so the <b>debate.report</b> enforces the structure for everyone’s benefit. Here is a graphical representation of the structure applied on the platform. See [statement types](statement-types.md) for more detail on the structure and use of different types of statement.
 
 
-
-
 ## Reading the Debate
 The graph panel is the best way to read a debate. It breaks down the arguments into pros (blue) and cons (red), lays out the evidence and warrants that connect evidence to the claims, hightlights rebutals, etc. The visual representations is a very powerful way to quickly convey and grasp what's going on. For exanmple, you can immediately see whiuch arguments have no evidence. Take some time to read the debate, try to understand what the debaters are saying, and then form your own views as to whether or not the arguments are accurate and true
 
@@ -44,26 +42,9 @@ Deductive arguments aim for certainty, where the conclusion is intended to follo
 Inductive arguments aim for probability, where the conclusion is intended to follow with a high likelihood (but not absolute certainty) given the premises. 
 The terms "valid" and "sound" apply to deductive arguments, while "strong" and "cogent" apply to inductive arguments. Both types are forms of logical reasoning, whereas arguments that fail certan logical tests are classified as fallacies or incorrect reasoning.
 
+For more detail on reading and understanding debates see [debate theory](theory/index.md)
 
-### Starting and Closing a Debate
 
-To start a new debate you need to have the Moderator role, this allows you to create new resolutions. 
-Once created, anyone with the debater role, including the moderator, can create arguments for and against the resolution. Currently debates remain open indefinitely, but coming soon is the ability to close a debate either manually or after a set period of time, i.e. anything from hours to months. Once a debate is closed it will still be visible but no more debating or voting will take place unless it is subseqently  re-opened by the moderator.
-
-### Private Debates
-
-Currently all resolutions are visible to everyone on the platform, although soon moderators will be able to create private debates. Private debates will be useful for organisations or communities who don’t want people outside seeing their debates. And even families who wish to encourage healthy debate and discussion within the family will be able to use private debates to get the conversations going, e.g. to explore the big questions around moving house, or just deciding where to go on holiday!
-
-### Moderating the Debate
-
-Moderators must monitor the arguments and discussions for and against their resolutions and report any potential infringements of the platform terms & conditions to the platform administrator. 
-Content owners will be alerted to any suspected infringment and can appeal to the System Administrator.
-Coming early in 2026 will be an automated monitoring system which will make it easier to catch and remove dodgy content. 
-
-## Creating the Arguments
-
-As a debater, your role is to construct persuasive arguments, For or Against, to engage your opponents, and to vote thoughtfully. Follow these steps to excel:
-Unsubscribe from these emails
 
 ### Understand the Debate Structure
 
