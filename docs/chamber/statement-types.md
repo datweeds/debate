@@ -7,7 +7,7 @@
 
 ---
 
-# Statement Types
+# Statement Types 
  <details>
     <summary>Debate Structure Diagram</summary>
     Here is a diagram that shows how the different types of statement relate to each other in an argument
