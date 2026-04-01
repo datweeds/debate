@@ -8,20 +8,8 @@
 
 ---
 
-## Introduction to Debating
+## Introduction to the Chamber
 
-Welcome to debate.report, an online platform for structured, asynchronous debates on diverse topics. This guide is designed for new debaters to help you navigate the platform, understand the roles in the debating process, and to help you build effective arguments and have your voice heard. Whether you're new to debating or transitioning to online formats, this guide will equip you with the essentials to participate confidently.
-
-### Why Debate?
-Debating hones critical thinking, forces you to see both sides, and teaches you to articulate ideas —skills that cut through the noise of our info-saturated world. In politics, law, or even online arguments, it’s a tool for reasoning and persuasion. Plus, it’s a democratic cornerstone: societies need to debate openly to engender trust and commitment. In 2025, with polarized discourse and AI stirring the pot, debating’s role in fostering clarity and mutual understanding is more crucial than ever.
-
-### Who Should Debate?
-The short answer is – everyone! In truth though, it takes time and attention to follow and digest argument reasoning, evaluate the evidence, and consider opions. So not everyone can participate in all debates. So, choose your battles wisely and argue for what matters most to you. These are the debates you will research and consider carefully. For the other topics, you can at least read the summaries and vote on the arguments, based on what understanding you glean from them. 
-
-### Are my Contributions Private or Public?
-Presently all debating is conducted in private and all contributions and votes are anonymous. In a future release you will be able to opt-in to make your contributions public, meaning others will be able to associate your profile with your contributions and voting. This ‘public profile’ feature is expected early 2026.
-
-## The Debating Process
 ### Debate Structure
 As in most debate forums, the debates here have a formal structure which ensures a fair hearing For and Against, and a clear understanding of what is being argued. The debate.report platform ensures the integrity of the debate structure, allowing the you, the debater, to focus on what is really important - getting your points across and making them stick. 
 
@@ -119,7 +107,6 @@ If everyone follows this formal structure then the debates are much easier to re
     ```
     </details>
 
-Note - a discussion point can be posted against any type of statement although the lines are not represented on the diagram to allow the other lines of association to be clearer.
 
 ## Statement Types
 ### Resolution
@@ -191,7 +178,6 @@ An impact turn argues that the consequence (impact) the opponent claims is actua
 For example, if an opponent argues that a policy leads to economic recession (a negative impact), an impact turn would claim that the recession is actually beneficial, perhaps by stimulating innovation or forcing necessary economic reforms.
 It is crucial to note that a turn is distinct from a non-unique or a de-link, which merely argue that the opponent's argument is flawed or irrelevant, rather than transforming it into offensive material for the speaker's side.
 
-
 ### Impact
 In a public forum debate, an impact statement explains the significance or consequence of an argument, answering the question "Why does this matter?"
 It is the final result of a cause-and-effect relationship that demonstrates the value or importance of the argument to the resolution.
@@ -215,7 +201,7 @@ An evidence statement in a debate is specific, verifiable information that stren
 The evidence is used to justify the claim, and its significance must be explained via an associated warrant which
 show how the evidence supports the argument.
 
-## How to Debate on debate.report
+## Participating in a Debate
 
 ### Starting and Closing a Debate
 
