@@ -1,4 +1,3 @@
-# Debate Chamber Overview
 ??? warning "Support Notice"
     The **User Guide** is currently undergoing major re-construction, which we are aiming to complete by the end of April 2026. In the meantime please email [support@debate.report](mailto:support@debate.report)
 
@@ -8,109 +7,43 @@
 
 ---
 
-## Introduction to the Chamber
+# Introduction to the Chamber
 
-### Debate Structure
-As in most debate forums, the debates here have a formal structure which ensures a fair hearing For and Against, and a clear understanding of what is being argued. The debate.report platform ensures the integrity of the debate structure, allowing the you, the debater, to focus on what is really important - getting your points across and making them stick. 
+## Chamber Layout
+The chamber is laid out as a set of panels, and all the content on the page relates to one resolution. The panels are:
 
-Each debate comprises a resolution statmenet and a collection of other types of statements which are related to each other in a specific way to preserve their logical purpose. For example, the resolution should always have at least two claims attached to it, one For and the other Against, and each claim should have evidence to back it up connected to the claim via a Warrant which lays out the reasons why the evidence backs up the claim. A rebuttal statement can be lodged against most types of statement, except the resolution and the framework statement. The discussion point is not really part of the argument but simply a request for clarity, a question, or a comment. As such they also cannot be rebutted. There are more details about the different types of statement below.
+### Graph Panel
+Here the arguments are laid out in a colour-coded diagram, in a way that should make it easy to quickly see what's going on. See [graph panel](graph.md) for more on this.
 
-If everyone follows this formal structure then the debates are much easier to read and understand, and so the <b>debate.report</b> enforces the structure for everyone’s benefit. Here is a graphical representation of the structure applied on the platform.
+### List Panel
+Here the same arguments shown in the graph are listed in a table. This allows attributes to be more easily compared and contrasted, e.g. how many votes does each argument have. See [list panel](list.md) for more on this.
 
- <details>
-    <summary>Debate Structure Diagram</summary>
-    Here is a diagram that shows how the different types of statement relate to each other in an argument
+### Detail Panel
+This panel shows all the details pertaining to one statement, e.g. a claim, rebuttal, etc. This panel also has action buttons allowing you to vote, comment, view science reports, or add argumentation to the debate. Any user, logged in or not, can flag a statement if they believe it contravenes a policy, a regulation, or perhaps just falls short of expected codes of politeness and decency. See [detail panel](detail.md) for more on this.
 
-    ```mermaid
-    ---
-    title: Debate Structure Diagram
-    ---
-    classDiagram
-    direction TB
+### Switch Board
+Technically a popup and not a panel, this is an important part of the chamber and allows you to switch between the debates on different resolutions. See [switch board](switch.md) for more on this.
 
-    class RESOLUTION {
-        a formal statement that sets
-        the topic for the debate
-        which one side affirms
-        and the other side negates
-    }
+## Debate Structure
+As in most debate forums, the debates here follow a formal structure which ensures a fair hearing For and Against, and a clear understanding of what is being argued. The debate.report platform ensures the integrity of the debate structure, allowing the you, the debater, to focus on what is really important - getting your points across and making them stick. 
 
-    class FRAMEWORK {
-        set of principles or standards
-        used to evaluate the resolution
-        explaining why a particular
-        perspective is the best
-    }
+Each debate comprises a resolution statement and a collection of other types of statements which are related to each other in a specific way to preserve their logical purpose. For example, the resolution should always have at least two claims attached to it, one For and the other Against, and each claim should have evidence to back it up connected to the claim via a Warrant which lays out the reasons why the evidence backs up the claim. A rebuttal statement can be lodged against most types of statement, except the resolution and the framework statement. The discussion point is not really part of the argument but simply a request for clarity, a question, or a comment. As such they also cannot be rebutted. There are more details about the different types of statement below.
 
-    class CLAIM {
-        an assertion made by a debater
-        stating a belief or position
-        supported by evidence
-    }
-
-    class REBUTTAL {
-        response to an opponent
-        argument, where a debater
-        either disagrees or refutes
-        a claim, warrant or impact
-    }
-
-    class TURN {
-        an argument that reverses
-        the meaning or effect
-        of an opponent's argument
-    }
-
-    class IMPACT {
-        the consequence or significance
-        of the argument, quantifying
-        or evaluating how the outcome
-        affects people or society
-    }
-
-    class WARRANT {
-        provides the logical reason
-        or justification for why
-        the statement is true,
-        explaining the connection  
-    }
-
-    class EVIDENCE {
-        serves as the support for
-        the warrant, taking the form
-        of statistics, specific examples,
-        testimony, or expert opinion
-    }
-
-    RESOLUTION     "1"   -->   "1"     FRAMEWORK          : "evaluated using"
-    RESOLUTION     "1"   -->   "1..*"  CLAIM              : "supported or denied by"
-
-    CLAIM          "1"   -->   "0..1"  IMPACT
-    CLAIM          "1"   -->   "0..1"  TURN
-    CLAIM          "1"   -->   "0..1"  WARRANT            : "justifies or proves"
-    CLAIM          "1"   -->   "0..1"  REBUTTAL           : "can be rebutted"
-
-    TURN           "1"   -->   "0..1"  CLAIM              : "turns"
-    TURN           "1"   -->   "0..1"  IMPACT             : "turns"
-
-    IMPACT         "1"   ..>   "0..1"  TURN               : "impacts"
-
-    REBUTTAL       "1"   -->   "0..1"  TURN               : "rebutts"
-    REBUTTAL       "1"   -->   "0..1"  CLAIM              : "disagrees or disproves"
-    REBUTTAL       "1"   -->   "0..1"  IMPACT             : rebutts
-    REBUTTAL       "1"   -->   "0..1"  WARRANT            : rebutts
-
-    WARRANT        "1"   -->   "0..1"  CLAIM              : "justifies or proves"
-    WARRANT        "1"   -->   "0..1"  REBUTTAL           : "justifies or proves"
-
-    EVIDENCE       "*"   -->   "0..*"  WARRANT            : "supports"
-    ```
-    </details>
+If everyone follows this formal structure then the debates are much easier to read and understand, and so the <b>debate.report</b> enforces the structure for everyone’s benefit. Here is a graphical representation of the structure applied on the platform. See [statement types](statement-types.md) for more detail on the structure and use of different types of statement.
 
 
 
 
-## Participating in a Debate
+## Reading the Debate
+The graph panel is the best way to read a debate. It breaks down the arguments into pros (blue) and cons (red), lays out the evidence and warrants that connect evidence to the claims, hightlights rebutals, etc. The visual representations is a very powerful way to quickly convey and grasp what's going on. For exanmple, you can immediately see whiuch arguments have no evidence. Take some time to read the debate, try to understand what the debaters are saying, and then form your own views as to whether or not the arguments are accurate and true
+
+### Deductive vs Inductive Arguments
+In logic, the two primary types of arguments are deductive and inductive, not "logical" versus "non-logical." 
+
+Deductive arguments aim for certainty, where the conclusion is intended to follow with logical necessity from the premises; if the premises are true, the conclusion must be true. 
+Inductive arguments aim for probability, where the conclusion is intended to follow with a high likelihood (but not absolute certainty) given the premises. 
+The terms "valid" and "sound" apply to deductive arguments, while "strong" and "cogent" apply to inductive arguments. Both types are forms of logical reasoning, whereas arguments that fail certan logical tests are classified as fallacies or incorrect reasoning.
+
 
 ### Starting and Closing a Debate
 
