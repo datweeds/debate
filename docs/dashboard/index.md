@@ -8,36 +8,22 @@ the Debate Report Team, March 2026
 
 ---
 
-## Test Title2
-Text
+### Starting and Closing a Debate
 
-=== "[ FEATURES ]"
+To start a new debate you need to have the Moderator role, this allows you to create new resolutions. 
+Once created, anyone with the debater role, including the moderator, can create arguments for and against the resolution. Currently debates remain open indefinitely, but coming soon is the ability to close a debate either manually or after a set period of time, i.e. anything from hours to months. Once a debate is closed it will still be visible but no more debating or voting will take place unless it is subseqently  re-opened by the moderator.
 
-    ### Title Feature Notes
-    Text
-    Additional paragraphs go here, also indented by 4 spaces.
-    
-    ### Text 2
-    <details>
-    <summary>Collapsible Tech Section</summary>
-    More technical content here (native HTML, no styling needed).
-    ```mermaid
-    ---
-    title: Template Flow Diagram
-    ---
-    flowchart TD
-        A[User opens Voting Box] --> B{Debate active?}
-        B -->|Yes| C[Click 'New Vote']
-        B -->|No| D[Error: Debate closed]
-        C --> E[Enter proposal details]
-        E --> F[Set options & duration]
-        F --> G[Submit]
-        G --> H[Vote listed & votable]
-        style A fill:#C91616,stroke:#333
-        style H fill:#C91616,stroke:#333
-    ```
-    </details>
+### Private Debates
 
-=== "[ TECHNICAL NOTES ]"
-    ### Title Technical Notes
-    Text
+Currently all resolutions are visible to everyone on the platform, although soon moderators will be able to create private debates. Private debates will be useful for organisations or communities who don’t want people outside seeing their debates. And even families who wish to encourage healthy debate and discussion within the family will be able to use private debates to get the conversations going, e.g. to explore the big questions around moving house, or just deciding where to go on holiday!
+
+### Moderating the Debate
+
+Moderators must monitor the arguments and discussions for and against their resolutions and report any potential infringements of the platform terms & conditions to the platform administrator. 
+Content owners will be alerted to any suspected infringment and can appeal to the System Administrator.
+Coming early in 2026 will be an automated monitoring system which will make it easier to catch and remove dodgy content. 
+
+## Creating the Arguments
+
+As a debater, your role is to construct persuasive arguments, For or Against, to engage your opponents, and to vote thoughtfully. Follow these steps to excel:
+Unsubscribe from these emails
