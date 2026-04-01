@@ -49,6 +49,7 @@ nav:
   - 4] DEBATE THEORY:
     - Theory Overview: theory/index.md
     - Debate Concepts: theory/concepts.md
+    - Statement Types: statement-types.md
     - Roles: theory/roles.md
     - Logical Fallacy: chamber/fallacy.md
     # Add more as needed
