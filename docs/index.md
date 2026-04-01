@@ -25,7 +25,7 @@ First, view the notes below which relate to the home page. After that, the best 
 
 Happy debating!
 
-## Site Header
+## Site Navigation
 The header appears on top of all pages and comprises:
 
 ### Menu system (3 horizontal lines)
@@ -37,11 +37,11 @@ Use this to return to the index/home page.
 ### Profile icon
 An icon of a human portrait. Coloured grey if user is not logged in - click to log in. Coloured red if logged it - click to access the [profile](account/profile.md) page.
 
-## Site Footer
-The footer appears at the bottom of all pages, and comprises links to Terms & Conditions, Privacy Policy, About Us, [news](news.md), and [contact us](account/contact.md) pages.
+### Page Footer
+The footer appears at the bottom of all pages, and comprises links to Terms & Conditions, Privacy Policy, About Us, [news](news.md), and [contact us](account/contact.md) pages. There is also a toggle to switch on or off the dynamic help system. If set 'on' then little purple help circles will appear in various points in the platform, which you can click to jump into the appropriate place in the Debate Guide.
 
-## Home Page (Index)
-The index page is the landing page for the debate platform and provides basic information to assist new users find their way about.
+## Home Page
+The home page is designed to introduce the platform to new users, and to provide an easy portal into the debate chamber for returning users. All debates are categorised by subject area and there is a one-click entry to view debates in any area. See below for a list of subject areas. Users that have explored the chamber may have tagged one or more debates as a 'favourite' and these are immediately accessible from the home page. There is also a 'What's Hot' section that links to debates that are currently attracting a lot of attention.
 
 ### Subject Areas
 Click ***+*** to expand the subject area panel (***-*** collapse again). All debates are classified by ***subject area***. This is a standard set of twelve subject areas defined across the platform, designed to accommodate any debate topic imaginable. The subject area is set by the Moderator when they create the debate resolution (in the [dashboard](dashboard/index.md)).
