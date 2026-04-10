@@ -77,9 +77,9 @@
 
     EVIDENCE       "*"   -->   "0..*"  WARRANT            : "supports"
     ```
-    </details>
+</details>
 
-     <details>
+<details>
     <summary>Debate Structure Diagram</summary>
     Here is a diagram that shows how the different types of statement relate to each other in an argument
 
@@ -170,7 +170,7 @@
 
     EVIDENCE       "*"   -->   "0..*"  WARRANT            : "supports"
     ```
-    </details>
+</details>
 
 ## Resolution
 A resolution statement in a debate serves as the central proposition that defines the topic and the specific stance to be argued, acting as the foundation for the entire discussion. It is typically a clear, concise, and balanced statement that presents a specific issue, often framed as a policy change, a factual claim, or a value judgment. The resolution sets the scope and focus of the debate, guiding the arguments and evidence presented by both sides.
