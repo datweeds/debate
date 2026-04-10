@@ -9,6 +9,77 @@
 
 # Statement Types 
  <details>
+    <summary>Debate Structure Diagram - Simplified</summary>
+    Here is a diagram that shows how the different types of statement relate to each other in an argument. Not all types of statement or relationships are shown in this simplified view.
+
+    ```mermaid
+    ---
+    title: Simplified Debate Structure Diagram
+    ---
+    classDiagram
+    direction TB
+
+    class RESOLUTION {
+        a formal statement that sets
+        the topic for the debate
+        which one side affirms
+        and the other side negates
+    }
+
+    class CLAIM {
+        an assertion made by a debater
+        stating a belief or position
+        supported by evidence
+    }
+
+    class REBUTTAL {
+        response to an opponent
+        argument, where a debater
+        either disagrees or refutes
+        a claim, warrant or impact
+    }
+
+    class IMPACT {
+        the consequence or significance
+        of the argument, quantifying
+        or evaluating how the outcome
+        affects people or society
+    }
+
+    class WARRANT {
+        provides the logical reason
+        or justification for why
+        the statement is true,
+        explaining the connection  
+    }
+
+    class EVIDENCE {
+        serves as the support for
+        the warrant, taking the form
+        of statistics, specific examples,
+        testimony, or expert opinion
+    }
+
+    RESOLUTION     "1"   -->   "1..*"  CLAIM              : "supported or denied by"
+
+    CLAIM          "1"   -->   "0..1"  WARRANT            : "justifies or proves"
+    CLAIM          "1"   -->   "0..1"  REBUTTAL           : "can be rebutted"
+
+    IMPACT         "1"   ..>   "0..1"  REBUTTAL           : "impacts"
+    IMPACT         "1"   ..>   "0..1"  CLAIM              : "impacts"
+
+    REBUTTAL       "1"   -->   "0..1"  CLAIM              : "disagrees or disproves"
+    REBUTTAL       "1"   -->   "0..1"  IMPACT             : rebutts
+    REBUTTAL       "1"   -->   "0..1"  WARRANT            : rebutts
+
+    WARRANT        "1"   -->   "0..1"  CLAIM              : "justifies or proves"
+    WARRANT        "1"   -->   "0..1"  REBUTTAL           : "justifies or proves"
+
+    EVIDENCE       "*"   -->   "0..*"  WARRANT            : "supports"
+    ```
+    </details>
+
+     <details>
     <summary>Debate Structure Diagram</summary>
     Here is a diagram that shows how the different types of statement relate to each other in an argument
 
