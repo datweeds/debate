@@ -1506,14 +1506,13 @@ WARRANT        "1"   --&gt;   "0..1"  CLAIM              : "justifies or proves"
 WARRANT        "1"   --&gt;   "0..1"  REBUTTAL           : "justifies or proves"
 
 EVIDENCE       "*"   --&gt;   "0..*"  WARRANT            : "supports"</code></pre>
-    </details>
+</details>
 
-<div class="language-text highlight"><pre><span></span><code> &lt;details&gt;
-&lt;summary&gt;Debate Structure Diagram&lt;/summary&gt;
-Here is a diagram that shows how the different types of statement relate to each other in an argument
+<details>
+    <summary>Debate Structure Diagram</summary>
+    Here is a diagram that shows how the different types of statement relate to each other in an argument
 
-```mermaid
----
+    <pre class="mermaid"><code>---
 title: Debate Structure Diagram
 ---
 classDiagram
@@ -1549,7 +1548,7 @@ class REBUTTAL {
 class TURN {
     an argument that reverses
     the meaning or effect
-    of an opponent&#39;s argument
+    of an opponent's argument
 }
 
 class IMPACT {
@@ -1573,34 +1572,33 @@ class EVIDENCE {
     testimony, or expert opinion
 }
 
-RESOLUTION     &quot;1&quot;   --&gt;   &quot;1&quot;     FRAMEWORK          : &quot;evaluated using&quot;
-RESOLUTION     &quot;1&quot;   --&gt;   &quot;1..*&quot;  CLAIM              : &quot;supported or denied by&quot;
+RESOLUTION     "1"   --&gt;   "1"     FRAMEWORK          : "evaluated using"
+RESOLUTION     "1"   --&gt;   "1..*"  CLAIM              : "supported or denied by"
 
-CLAIM          &quot;1&quot;   --&gt;   &quot;0..1&quot;  IMPACT
-CLAIM          &quot;1&quot;   --&gt;   &quot;0..1&quot;  TURN
-CLAIM          &quot;1&quot;   --&gt;   &quot;0..1&quot;  WARRANT            : &quot;justifies or proves&quot;
-CLAIM          &quot;1&quot;   --&gt;   &quot;0..1&quot;  REBUTTAL           : &quot;can be rebutted&quot;
+CLAIM          "1"   --&gt;   "0..1"  IMPACT
+CLAIM          "1"   --&gt;   "0..1"  TURN
+CLAIM          "1"   --&gt;   "0..1"  WARRANT            : "justifies or proves"
+CLAIM          "1"   --&gt;   "0..1"  REBUTTAL           : "can be rebutted"
 
-TURN           &quot;1&quot;   --&gt;   &quot;0..1&quot;  CLAIM              : &quot;turns&quot;
-TURN           &quot;1&quot;   --&gt;   &quot;0..1&quot;  IMPACT             : &quot;turns&quot;
-TURN           &quot;1&quot;   --&gt;   &quot;0..1&quot;  REBUTTAL           : &quot;turns&quot;
+TURN           "1"   --&gt;   "0..1"  CLAIM              : "turns"
+TURN           "1"   --&gt;   "0..1"  IMPACT             : "turns"
+TURN           "1"   --&gt;   "0..1"  REBUTTAL           : "turns"
 
-IMPACT         &quot;1&quot;   ..&gt;   &quot;0..1&quot;  TURN               : &quot;impacts&quot;
-IMPACT         &quot;1&quot;   ..&gt;   &quot;0..1&quot;  REBUTTAL           : &quot;impacts&quot;
-IMPACT         &quot;1&quot;   ..&gt;   &quot;0..1&quot;  CLAIM              : &quot;impacts&quot;
+IMPACT         "1"   ..&gt;   "0..1"  TURN               : "impacts"
+IMPACT         "1"   ..&gt;   "0..1"  REBUTTAL           : "impacts"
+IMPACT         "1"   ..&gt;   "0..1"  CLAIM              : "impacts"
 
-REBUTTAL       &quot;1&quot;   --&gt;   &quot;0..1&quot;  TURN               : &quot;rebutts&quot;
-REBUTTAL       &quot;1&quot;   --&gt;   &quot;0..1&quot;  CLAIM              : &quot;disagrees or disproves&quot;
-REBUTTAL       &quot;1&quot;   --&gt;   &quot;0..1&quot;  IMPACT             : rebutts
-REBUTTAL       &quot;1&quot;   --&gt;   &quot;0..1&quot;  WARRANT            : rebutts
+REBUTTAL       "1"   --&gt;   "0..1"  TURN               : "rebutts"
+REBUTTAL       "1"   --&gt;   "0..1"  CLAIM              : "disagrees or disproves"
+REBUTTAL       "1"   --&gt;   "0..1"  IMPACT             : rebutts
+REBUTTAL       "1"   --&gt;   "0..1"  WARRANT            : rebutts
 
-WARRANT        &quot;1&quot;   --&gt;   &quot;0..1&quot;  CLAIM              : &quot;justifies or proves&quot;
-WARRANT        &quot;1&quot;   --&gt;   &quot;0..1&quot;  REBUTTAL           : &quot;justifies or proves&quot;
+WARRANT        "1"   --&gt;   "0..1"  CLAIM              : "justifies or proves"
+WARRANT        "1"   --&gt;   "0..1"  REBUTTAL           : "justifies or proves"
 
-EVIDENCE       &quot;*&quot;   --&gt;   &quot;0..*&quot;  WARRANT            : &quot;supports&quot;
-```
-&lt;/details&gt;
-</code></pre></div>
+EVIDENCE       "*"   --&gt;   "0..*"  WARRANT            : "supports"</code></pre>
+</details>
+
 <h2 id="resolution">Resolution</h2>
 <p>A resolution statement in a debate serves as the central proposition that defines the topic and the specific stance to be argued, acting as the foundation for the entire discussion. It is typically a clear, concise, and balanced statement that presents a specific issue, often framed as a policy change, a factual claim, or a value judgment. The resolution sets the scope and focus of the debate, guiding the arguments and evidence presented by both sides.</p>
 <p>The resolution is usually structured with a prefix (like "Resolved:", "This house believes that", or "Be it resolved") followed by a subject (the main topic) and a predicate (the specific claim or stance).</p>
