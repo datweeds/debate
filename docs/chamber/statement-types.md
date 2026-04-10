@@ -62,22 +62,22 @@
 
     RESOLUTION     "1"   -->   "1..*"  CLAIM              : "supported or denied by"
 
-    CLAIM          "1"   -->   "0..1"  WARRANT            : "justifies or proves"
-    CLAIM          "1"   -->   "0..1"  REBUTTAL           : "can be rebutted"
+    CLAIM          "1"   -->   "0..*"  WARRANT            : "justifies or proves"
+    CLAIM          "0..1"   -->   "0..*"  REBUTTAL           : "can be rebutted"
 
     IMPACT         "1"   ..>   "0..1"  REBUTTAL           : "impacts"
-    IMPACT         "1"   ..>   "0..1"  CLAIM              : "impacts"
+    IMPACT         "0..1"   ..>   "0..1"  CLAIM              : "impacts"
 
-    REBUTTAL       "1"   -->   "0..1"  CLAIM              : "disagrees or disproves"
-    REBUTTAL       "1"   -->   "0..1"  IMPACT             : rebutts
-    REBUTTAL       "1"   -->   "0..1"  WARRANT            : rebutts
+    REBUTTAL       "0..1"   -->   "0..1"  IMPACT             : rebutts
+    REBUTTAL       "0..1"   -->   "0..1"  WARRANT            : rebutts
 
-    WARRANT        "1"   -->   "0..1"  CLAIM              : "justifies or proves"
     WARRANT        "1"   -->   "0..1"  REBUTTAL           : "justifies or proves"
 
     EVIDENCE       "*"   -->   "0..*"  WARRANT            : "supports"
     ```
 </details>
+
+## Full Diagram
 
 <details>
     <summary>Debate Structure Diagram</summary>
