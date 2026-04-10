@@ -83,8 +83,11 @@
 
     TURN           "1"   -->   "0..1"  CLAIM              : "turns"
     TURN           "1"   -->   "0..1"  IMPACT             : "turns"
+    TURN           "1"   -->   "0..1"  REBUTTAL           : "turns"
 
     IMPACT         "1"   ..>   "0..1"  TURN               : "impacts"
+    IMPACT         "1"   ..>   "0..1"  REBUTTAL           : "impacts"
+    IMPACT         "1"   ..>   "0..1"  CLAIM              : "impacts"
 
     REBUTTAL       "1"   -->   "0..1"  TURN               : "rebutts"
     REBUTTAL       "1"   -->   "0..1"  CLAIM              : "disagrees or disproves"
