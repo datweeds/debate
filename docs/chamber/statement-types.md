@@ -63,7 +63,7 @@
     RESOLUTION     "1"      -->   "1..*"  CLAIM              : "supported or denied by"
 
     CLAIM          "1"      -->   "0..*"  WARRANT            : "justified or proven by"
-    CLAIM          "0..1    -->   "0..*"  IMPACT             : "has impact"
+    CLAIM          "0..1"    -->   "0..*"  IMPACT             : "has impact"
 
     REBUTTAL       "0..1"   -->   "0..1"  IMPACT             : "rebutts"
     REBUTTAL       "0..1"   -->   "0..*"  IMPACT             : "has impact"
