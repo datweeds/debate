@@ -62,16 +62,14 @@
 
     RESOLUTION     "1"   -->   "1..*"  CLAIM              : "supported or denied by"
 
-    CLAIM          "1"   -->   "0..*"  WARRANT            : "justifies or proves"
-    CLAIM          "0..1"   -->   "0..*"  REBUTTAL           : "can be rebutted"
-
-    IMPACT         "1"   ..>   "0..1"  REBUTTAL           : "impacts"
-    IMPACT         "0..1"   ..>   "0..1"  CLAIM              : "impacts"
+    CLAIM          "1"   -->   "0..*"  WARRANT            : "justified or proven by"
+    CLAIM          "0..1    -->   "0..*"  IMPACT          : "has impact"
 
     REBUTTAL       "0..1"   -->   "0..1"  IMPACT             : rebutts
+    REBUTTAL       "0..1"   -->   "0..*"  IMPACT             : "has impact"
     REBUTTAL       "0..1"   -->   "0..1"  WARRANT            : rebutts
-
-    WARRANT        "1"   -->   "0..1"  REBUTTAL           : "justifies or proves"
+    REBUTTAL       "0..1"   -->   "0..1"  WARRANT            : "justified or proven by"
+    REBUTTAL       "0..1"   -->   "0..1"  CLAIM             : rebutts
 
     EVIDENCE       "*"   -->   "0..*"  WARRANT            : "supports"
     ```
