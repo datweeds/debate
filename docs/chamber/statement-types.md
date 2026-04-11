@@ -60,18 +60,18 @@
         testimony, or expert opinion
     }
 
-    RESOLUTION     "1"   -->   "1..*"  CLAIM              : "supported or denied by"
+    RESOLUTION     "1"      -->   "1..*"  CLAIM              : "supported or denied by"
 
-    CLAIM          "1"   -->   "0..*"  WARRANT            : "justified or proven by"
-    CLAIM          "0..1    -->   "0..*"  IMPACT          : "has impact"
+    CLAIM          "1"      -->   "0..*"  WARRANT            : "justified or proven by"
+    CLAIM          "0..1    -->   "0..*"  IMPACT             : "has impact"
 
-    REBUTTAL       "0..1"   -->   "0..1"  IMPACT             : rebutts
+    REBUTTAL       "0..1"   -->   "0..1"  IMPACT             : "rebutts"
     REBUTTAL       "0..1"   -->   "0..*"  IMPACT             : "has impact"
-    REBUTTAL       "0..1"   -->   "0..1"  WARRANT            : rebutts
+    REBUTTAL       "0..1"   -->   "0..1"  WARRANT            : "rebutts"
     REBUTTAL       "0..1"   -->   "0..1"  WARRANT            : "justified or proven by"
-    REBUTTAL       "0..1"   -->   "0..1"  CLAIM             : rebutts
+    REBUTTAL       "0..1"   -->   "0..1"  CLAIM              : "rebutts"
 
-    EVIDENCE       "*"   -->   "0..*"  WARRANT            : "supports"
+    EVIDENCE       "*"      -->   "0..*"  WARRANT            : "supports"
     ```
 </details>
 
